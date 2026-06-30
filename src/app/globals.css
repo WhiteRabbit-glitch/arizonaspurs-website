@@ -11,7 +11,7 @@
 
   /* Fonts */
   --font-limelight: var(--font-limelight);
-  --font-poiret: var(--font-poiret);
+  --font-josefin: var(--font-josefin);
 
   /* Spacing scale */
   --spacing-section: 6rem;
@@ -20,7 +20,7 @@
 
 /* Base */
 html {
-  font-family: var(--font-poiret), Georgia, serif;
+  font-family: var(--font-josefin), Georgia, serif;
 }
 
 body {
@@ -62,7 +62,7 @@ body {
 
 /* Section label treatment */
 .section-label {
-  font-family: var(--font-poiret), Georgia, serif;
+  font-family: var(--font-josefin), Georgia, serif;
   font-size: 0.875rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -78,6 +78,124 @@ body {
   width: 2rem;
   height: 1px;
   background-color: currentColor;
+}
+
+/* Nav link — gold underline sweep on hover */
+.nav-link {
+  position: relative;
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-block: 0.5rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-gold);
+  transition: width 150ms ease-out;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  width: 100%;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Nav CTA button */
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding-inline: 1.25rem;
+  background-color: var(--color-gold);
+  color: var(--color-spurs-navy);
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+.nav-cta:hover {
+  background-color: #ffffff;
+  color: var(--color-spurs-navy);
+}
+
+.nav-cta:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+/* Hamburger bars */
+.hamburger-bar {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: #ffffff;
+  transition: transform 150ms ease-out, opacity 150ms ease-out;
+}
+
+/* Footer links */
+.footer-link {
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 150ms ease-out;
+}
+
+.footer-link:hover {
+  color: var(--color-gold);
+}
+
+.footer-link:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Social icon links */
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 150ms ease-out;
+}
+
+.social-icon-link:hover {
+  color: var(--color-gold);
+}
+
+.social-icon-link:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 /* Respect reduced motion */

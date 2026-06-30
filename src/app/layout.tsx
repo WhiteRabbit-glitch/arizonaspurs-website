@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { Limelight, Poiret_One } from "next/font/google";
+import { Limelight, Josefin_Sans } from "next/font/google";
+import NavBar from "@/components/layout/NavBar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const limelight = Limelight({
@@ -8,9 +10,9 @@ const limelight = Limelight({
   subsets: ["latin"],
 });
 
-const poiretOne = Poiret_One({
-  weight: "400",
-  variable: "--font-poiret",
+const josefinSans = Josefin_Sans({
+  weight: ["400", "600", "700"],
+  variable: "--font-josefin",
   subsets: ["latin"],
 });
 
@@ -34,16 +36,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${limelight.variable} ${poiretOne.variable} h-full`}
+      className={`${limelight.variable} ${josefinSans.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-white text-near-black antialiased">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-spurs-navy focus:text-white focus:font-poiret"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-spurs-navy focus:text-white focus:font-josefin"
         >
           Skip to main content
         </a>
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

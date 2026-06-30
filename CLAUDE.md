@@ -11,8 +11,8 @@
 
 ## Fonts
 - **Limelight** — H1/hero, membership card name, member portal heading only. Uppercase only. Never below 3rem.
-- **Poiret One** — everything else: headings, body, nav, labels, buttons, captions, forms.
-- Both loaded via `next/font/google` in `src/app/layout.tsx`. CSS variables: `--font-limelight`, `--font-poiret`.
+- **Josefin Sans** — everything else: headings, body, nav, labels, buttons, captions, forms. Weights: 400 (body), 600 (labels/buttons), 700 (headings).
+- Both loaded via `next/font/google` in `src/app/layout.tsx`. CSS variables: `--font-limelight`, `--font-josefin`.
 
 ## Design tokens
 All in `src/app/globals.css` under `@theme`. Do not add a tailwind.config.ts.
