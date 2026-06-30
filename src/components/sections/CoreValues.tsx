@@ -6,14 +6,17 @@ import { useRef } from "react";
 
 const values = [
   {
+    number: "I",
     title: "Community",
     body: "We exist to bring Spurs fans together across Arizona — at Fibbers, at events, and beyond. Every match is an opportunity to grow the family.",
   },
   {
+    number: "II",
     title: "Service",
     body: "Annual food drives, community outreach, and local initiatives. Arizona Spurs is a nonprofit social club — every dollar collected is reinvested back into members and the community.",
   },
   {
+    number: "III",
     title: "The Game",
     body: "The official Tottenham Hotspur supporters club in Arizona. We promote the culture of association football in the region, one watch party at a time.",
   },
@@ -39,6 +42,9 @@ function ValueCard({
       transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.15 }}
       className="value-card"
     >
+      <span aria-hidden="true" className="value-card-number">
+        {value.number}
+      </span>
       <div className="value-card-rule" aria-hidden="true" />
       <h3 className="value-card-title">{value.title}</h3>
       <p className="value-card-body">{value.body}</p>

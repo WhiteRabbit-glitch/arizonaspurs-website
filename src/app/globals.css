@@ -164,6 +164,13 @@ body {
   position: relative;
 }
 
+.value-card-number {
+  font-family: var(--font-limelight), Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  letter-spacing: 0.05em;
+}
+
 .value-card-rule {
   width: 2rem;
   height: 1px;
