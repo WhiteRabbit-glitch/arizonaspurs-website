@@ -75,8 +75,8 @@ export default function History() {
                 className="flex flex-col gap-3 md:flex-row md:gap-10"
               >
                 {/* Year */}
-                <div className="flex shrink-0 items-start gap-4 md:w-32 md:flex-col md:items-end md:gap-0">
-                  <span className="font-limelight text-lg text-gold">
+                <div className="flex shrink-0 items-start gap-4 md:w-48 md:flex-col md:items-end md:gap-2">
+                  <span className="font-limelight text-4xl text-gold md:text-5xl">
                     {item.year}
                   </span>
                   {/* Dot on the timeline */}
