@@ -29,9 +29,6 @@ export default function EventsHero({ match }: { match: Match }) {
       aria-labelledby="events-heading"
       className="bg-spurs-navy px-6 py-28 text-center"
     >
-      {/* Decorative top rule */}
-      <div aria-hidden="true" className="mx-auto mb-16 max-w-[1200px] border-t border-gold/20" />
-
       <div className="mx-auto max-w-[1200px] flex flex-col items-center">
 
         {/* Page label */}
