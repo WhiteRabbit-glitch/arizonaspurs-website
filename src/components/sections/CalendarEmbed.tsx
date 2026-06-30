@@ -36,6 +36,7 @@ export default function CalendarEmbed() {
   return (
     <section
       ref={ref}
+      id="calendar"
       aria-labelledby="calendar-heading"
       className="bg-cream px-6 py-24"
     >

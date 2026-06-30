@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import EventsHero from "@/components/sections/EventsHero";
-import NextMatch from "@/components/sections/NextMatch";
 import CalendarEmbed from "@/components/sections/CalendarEmbed";
 import VenueInfo from "@/components/sections/VenueInfo";
 import { fetchNextMatch } from "@/lib/gcal";
@@ -22,8 +21,7 @@ export default async function EventsPage() {
 
   return (
     <main id="main-content">
-      <EventsHero />
-      <NextMatch match={match} />
+      <EventsHero match={match} />
       <CalendarEmbed />
       <VenueInfo />
     </main>
