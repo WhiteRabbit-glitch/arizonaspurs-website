@@ -153,6 +153,60 @@ body {
   transition: transform 150ms ease-out, opacity 150ms ease-out;
 }
 
+/* Hero CTA buttons */
+.hero-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding-inline: 2rem;
+  background-color: var(--color-gold);
+  color: var(--color-spurs-navy);
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+.hero-cta-primary:hover {
+  background-color: #ffffff;
+  color: var(--color-spurs-navy);
+}
+
+.hero-cta-primary:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding-inline: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: border-color 150ms ease-out, background-color 150ms ease-out;
+}
+
+.hero-cta-secondary:hover {
+  border-color: var(--color-gold);
+  background-color: rgba(179, 163, 105, 0.1);
+  color: var(--color-gold);
+}
+
+.hero-cta-secondary:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
 /* Footer links */
 .footer-link {
   font-family: var(--font-josefin), Georgia, serif;
