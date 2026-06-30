@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors */
+  --color-spurs-navy: #132257;
+  --color-deep-navy: #0a1535;
+  --color-gold: #b3a369;
+  --color-cream: #f5f0e6;
+  --color-near-black: #0d1117;
+  --color-white: #ffffff;
+
+  /* Fonts */
+  --font-limelight: var(--font-limelight);
+  --font-poiret: var(--font-poiret);
+
+  /* Spacing scale */
+  --spacing-section: 6rem;
+  --spacing-section-mobile: 3rem;
+}
+
+/* Base */
+html {
+  font-family: var(--font-poiret), Georgia, serif;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-near-black);
+}
+
+/* Skip link — visible on focus only */
+.sr-only:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--color-spurs-navy);
+  color: var(--color-white);
+  clip: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+/* Ornamental divider */
+.divider-ornamental {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-gold);
+}
+
+.divider-ornamental::before,
+.divider-ornamental::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-gold);
+}
+
+/* Section label treatment */
+.section-label {
+  font-family: var(--font-poiret), Georgia, serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-gold);
+}
+
+.section-label::before,
+.section-label::after {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background-color: currentColor;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
