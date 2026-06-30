@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { nextMatch } from "@/lib/match";
+import type { Match } from "@/lib/match";
 
 function formatMatchDate(isoString: string) {
   const date = new Date(isoString);
@@ -16,12 +16,12 @@ function formatMatchDate(isoString: string) {
   };
 }
 
-export default function NextMatch() {
+export default function NextMatch({ match }: { match: Match }) {
   const prefersReducedMotion = useReducedMotion();
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
-  const { day, date, time, iso } = formatMatchDate(nextMatch.date);
+  const { day, date, time, iso } = formatMatchDate(match.date);
 
   return (
     <section
@@ -68,7 +68,7 @@ export default function NextMatch() {
 
           {/* Opponent */}
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
-            {nextMatch.opponent}
+            {match.opponent}
           </span>
         </motion.div>
 
@@ -80,7 +80,7 @@ export default function NextMatch() {
           className="mt-6 flex justify-center"
         >
           <span className="border border-gold/40 px-4 py-1 font-josefin text-xs uppercase tracking-[0.2em] text-gold/80">
-            {nextMatch.competition}
+            {match.competition}
           </span>
         </motion.div>
 
@@ -110,12 +110,12 @@ export default function NextMatch() {
             {date} &nbsp;·&nbsp; {time}
           </time>
           <a
-            href={nextMatch.venueUrl}
+            href={match.venueUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="font-josefin text-sm tracking-wide text-gold/80 underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
           >
-            {nextMatch.venueLabel}
+            {match.venueLabel}
           </a>
         </motion.div>
 

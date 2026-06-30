@@ -6,9 +6,11 @@ export type Match = {
   venueUrl: string;   // Google Maps link
 };
 
-// Update this object each week to change the next match callout.
-export const nextMatch: Match = {
-  opponent: "Manchester United",
+// Fallback — used when Google Calendar API is not configured or returns nothing.
+// Once GOOGLE_CALENDAR_ID and GOOGLE_CALENDAR_API_KEY are set in .env.local,
+// this object is ignored and the site auto-updates from the calendar.
+export const fallbackMatch: Match = {
+  opponent: "TBD",
   competition: "Premier League",
   date: "2025-08-16T07:30:00",
   venueLabel: "Fibbers Irish Pub, Chandler AZ",
