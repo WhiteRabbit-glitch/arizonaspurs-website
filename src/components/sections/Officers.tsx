@@ -4,13 +4,15 @@ import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
+// Set imageUrl to the path in /public/images/officers/ once low-poly portraits are ready.
+// Leave as "" to show the monogram fallback.
 const officers = [
-  { name: "Joey Manning", role: "Chairperson" },
-  { name: "Chandra Carr", role: "Secretary" },
-  { name: "Steve Oxenden", role: "Treasurer" },
-  { name: "Jake Altersitz", role: "Social Media" },
-  { name: "Aaron Coe", role: "Member-at-Large" },
-  { name: "Alex Chapman", role: "Member-at-Large" },
+  { name: "Joey Manning", role: "Chairperson", imageUrl: "" },
+  { name: "Chandra Carr", role: "Secretary", imageUrl: "" },
+  { name: "Steve Oxenden", role: "Treasurer", imageUrl: "" },
+  { name: "Jake Altersitz", role: "Social Media", imageUrl: "" },
+  { name: "Aaron Coe", role: "Member-at-Large", imageUrl: "" },
+  { name: "Alex Chapman", role: "Member-at-Large", imageUrl: "" },
 ];
 
 export default function Officers() {
@@ -52,13 +54,21 @@ export default function Officers() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="officer-card"
             >
-              {/* Monogram */}
-              <div
-                aria-hidden="true"
-                className="mb-4 flex h-14 w-14 items-center justify-center border border-gold/50 font-limelight text-xl text-gold"
-              >
-                {officer.name.split(" ").map((n) => n[0]).join("")}
-              </div>
+              {/* Portrait or monogram fallback */}
+              {officer.imageUrl ? (
+                <img
+                  src={officer.imageUrl}
+                  alt={officer.name}
+                  className="mb-4 h-20 w-20 object-cover"
+                />
+              ) : (
+                <div
+                  aria-hidden="true"
+                  className="mb-4 flex h-14 w-14 items-center justify-center border border-gold/50 font-limelight text-xl text-gold"
+                >
+                  {officer.name.split(" ").map((n) => n[0]).join("")}
+                </div>
+              )}
               <p className="font-josefin text-sm font-700 uppercase tracking-wide text-spurs-navy">
                 {officer.name}
               </p>
