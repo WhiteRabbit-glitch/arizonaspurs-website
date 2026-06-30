@@ -83,7 +83,7 @@ export default function NavBar() {
             initial={prefersReducedMotion ? false : { height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={prefersReducedMotion ? {} : { height: 0, opacity: 0 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.2, ease: "easeOut" as const }}
             className="overflow-hidden border-t border-white/10 bg-deep-navy md:hidden"
           >
             <ul className="flex flex-col px-6 py-4" role="list">

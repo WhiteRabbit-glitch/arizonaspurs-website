@@ -19,7 +19,7 @@ export default function EventsHero({ match }: { match: Match }) {
   const fadeUp = (delay: number) => ({
     initial: prefersReducedMotion ? false : { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.55, ease: "easeOut", delay },
+    transition: { duration: 0.55, ease: "easeOut" as const, delay },
   });
 
   const { day, date, time } = formatMatchDate(match.date);

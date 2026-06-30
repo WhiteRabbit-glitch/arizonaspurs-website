@@ -39,7 +39,7 @@ function ValueCard({
       ref={ref}
       initial={prefersReducedMotion ? false : { opacity: 0, y: 32 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.15 }}
+      transition={{ duration: 0.6, ease: "easeOut" as const, delay: index * 0.15 }}
       className="value-card"
     >
       <span aria-hidden="true" className="value-card-number">
@@ -69,7 +69,7 @@ export default function CoreValues() {
           ref={headingRef}
           initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
           animate={headingInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" as const }}
           className="mb-16 text-center"
         >
           <p className="section-label mb-6 justify-center text-spurs-navy/50">
