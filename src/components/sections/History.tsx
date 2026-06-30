@@ -16,14 +16,14 @@ const timeline = [
     body: "The club relocated six times over two years, chasing the right atmosphere and the right crowd. Each move brought new faces and grew the family.",
   },
   {
-    year: "2016/17",
+    year: "2016-2017",
     heading: "Fibbers",
     body: "Arizona Spurs found its permanent home at Fibber Magees in Chandler. The right pub, the right people — and we haven't left since.",
   },
   {
     year: "Today",
     heading: "Official & Growing",
-    body: "Now a recognized official supporters club of Tottenham Hotspur FC, Arizona Spurs draws members from across the Phoenix metro and beyond. Supporting Spurs is always better together.",
+    body: "An officially recognized Tottenham Hotspur FC supporters club since 2014, Arizona Spurs draws members from across the Phoenix metro and beyond. Supporting Spurs is always better together.",
   },
 ];
 
