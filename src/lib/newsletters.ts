@@ -28,5 +28,23 @@ export const newsletters: NewsletterIssue[] = [
     description: "Spring match schedule, club news, and everything happening at Fibbers.",
     url: "https://official-arizona-spurs.kit.com/posts/arizona-spurs-supporters-update-april-2026",
   },
+  {
+    title: "Arizona Spurs Update — March 2026",
+    date: "2026-03-01",
+    description: "March match previews, watch party details, and the latest from the club.",
+    url: "https://official-arizona-spurs.kit.com/posts/arizona-spurs-update-march-2026",
+  },
+  {
+    title: "Arizona Spurs Update — February 2026",
+    date: "2026-02-01",
+    description: "February fixtures, mid-season check-in, and club updates.",
+    url: "https://official-arizona-spurs.kit.com/posts/arizona-spurs-update-february-2026",
+  },
+  {
+    title: "Arizona Spurs Update — January 2026",
+    date: "2026-01-01",
+    description: "Gallagher arrives, the AFCON final, and what's ahead for the second half of the season.",
+    url: "https://official-arizona-spurs.kit.com/posts/arizona-spurs-update-january-2026-gallagher-arrives-afcon-final-and-what-s-ahead",
+  },
   // Add more issues above this line, newest first.
 ];
