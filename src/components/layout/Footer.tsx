@@ -141,6 +141,21 @@ export default function Footer() {
           <Link href="/join" className="nav-cta self-start">
             Join the Club
           </Link>
+
+          {/* Easter egg — member/officer portal entry */}
+          <Link
+            href="/portal"
+            aria-label="Member login"
+            className="-mt-20 -mb-24 -ml-8 w-fit opacity-60 transition-opacity hover:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-4"
+          >
+            <Image
+              src="/images/easter-egg-group.png"
+              alt=""
+              width={1024}
+              height={1024}
+              className="h-72 w-72"
+            />
+          </Link>
         </div>
       </div>
 

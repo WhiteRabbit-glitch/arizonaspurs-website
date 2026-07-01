@@ -138,6 +138,8 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: background-color 150ms ease-out, color 150ms ease-out;
 }
 

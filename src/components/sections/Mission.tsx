@@ -41,8 +41,8 @@ export default function Mission() {
           className="font-josefin text-xl font-600 leading-relaxed tracking-wide text-spurs-navy [text-wrap:balance]"
         >
           Arizona Spurs exists to bring Tottenham Hotspur supporters together across
-          Arizona — to build community, give back to our neighbors, and grow the culture
-          of the beautiful game in the desert.
+          the Phoenix metro — to build community, give back to our neighbors, and grow
+          the culture of the beautiful game in the desert.
         </motion.p>
 
         <motion.div {...fadeUp(0.35)} className="mt-10 flex flex-col gap-5 text-left">

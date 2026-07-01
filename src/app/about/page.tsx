@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AboutHero from "@/components/sections/AboutHero";
+import AboutPhoto from "@/components/sections/AboutPhoto";
 import Mission from "@/components/sections/Mission";
 import AboutPillars from "@/components/sections/AboutPillars";
 import History from "@/components/sections/History";
@@ -22,6 +23,7 @@ export default function AboutPage() {
     <main id="main-content">
       <AboutHero />
       <Mission />
+      <AboutPhoto />
       <AboutPillars />
       <History />
       <Officers />

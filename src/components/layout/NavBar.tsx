@@ -40,7 +40,7 @@ export default function NavBar() {
         </Link>
 
         {/* Desktop nav links */}
-        <ul className="hidden items-center gap-8 md:flex" role="list">
+        <ul className="hidden items-center gap-8 lg:flex" role="list">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link href={link.href} className="nav-link">
@@ -51,7 +51,7 @@ export default function NavBar() {
         </ul>
 
         {/* Desktop CTA */}
-        <Link href="/join" className="nav-cta hidden md:flex">
+        <Link href="/join" className="nav-cta hidden lg:flex">
           Join the Club
         </Link>
 
@@ -61,7 +61,7 @@ export default function NavBar() {
           aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
-          className="flex h-11 w-11 items-center justify-center text-white md:hidden"
+          className="flex h-11 w-11 items-center justify-center text-white lg:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
           {menuOpen
@@ -80,7 +80,7 @@ export default function NavBar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={prefersReducedMotion ? {} : { height: 0, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeOut" as const }}
-            className="overflow-hidden border-t border-white/10 bg-deep-navy md:hidden"
+            className="overflow-hidden border-t border-white/10 bg-deep-navy lg:hidden"
           >
             <ul className="flex flex-col px-6 py-4" role="list">
               {navLinks.map((link) => (

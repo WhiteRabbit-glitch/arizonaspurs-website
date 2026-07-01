@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -53,6 +54,22 @@ export default function VenueInfo() {
           >
             {venue.name}
           </h2>
+        </motion.div>
+
+        {/* Illustration */}
+        <motion.div
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.55, delay: 0.05 }}
+          className="mx-auto mb-16 max-w-[800px]"
+        >
+          <Image
+            src="/images/events/pub-illustration.png"
+            alt="Illustrated view of Fibber Magee's Pub interior, decorated with Tottenham Hotspur scarves and jerseys"
+            width={1448}
+            height={1086}
+            className="h-auto w-full"
+          />
         </motion.div>
 
         {/* Two-column layout */}
