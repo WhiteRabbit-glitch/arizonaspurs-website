@@ -67,8 +67,9 @@ export default function NewsletterArchive() {
                   className="issue-row group"
                   aria-label={`Read ${issue.title} — opens in new tab`}
                 >
-                  <span className="issue-date">{formatIssueDate(issue.date)}</span>
                   <span className="issue-content">
+                    <span className="issue-date">{formatIssueDate(issue.date)}</span>
+                    <span className="issue-em-dash" aria-hidden="true"> — </span>
                     <span className="issue-description">{issue.description}</span>
                   </span>
                   <span className="issue-arrow" aria-hidden="true">→</span>
