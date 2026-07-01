@@ -6,8 +6,8 @@ import { useRef } from "react";
 
 const venue = {
   name: "Fibbers Irish Pub",
-  address: "7700 W Chandler Blvd, Chandler, AZ 85226",
-  directionsUrl: "https://maps.google.com/?q=Fibbers+Irish+Pub+7700+W+Chandler+Blvd+Chandler+AZ",
+  address: "1989 W Elliot Rd, Chandler, AZ 85224",
+  directionsUrl: "https://maps.google.com/?q=Fibber+Magees+1989+W+Elliot+Rd+Chandler+AZ+85224",
   websiteUrl: "https://www.fibbersirishpub.com",
   details: [
     { label: "Doors", value: "Open 30 minutes before kickoff" },
@@ -21,7 +21,7 @@ const venue = {
 // For a custom dark-themed map, add a Map ID via Google Cloud Console
 // (Maps JavaScript API + Cloud-based maps styling) and swap to the JS embed.
 const MAP_EMBED_URL =
-  "https://maps.google.com/maps?q=Fibbers+Irish+Pub+7700+W+Chandler+Blvd+Chandler+AZ&output=embed&z=15";
+  "https://maps.google.com/maps?q=Fibber+Magees+1989+W+Elliot+Rd+Chandler+AZ+85224&output=embed&z=15";
 
 export default function VenueInfo() {
   const prefersReducedMotion = useReducedMotion();

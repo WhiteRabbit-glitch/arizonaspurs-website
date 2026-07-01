@@ -24,7 +24,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Where do you watch?",
         answer:
-          "We watch at Fibbers Irish Pub, 7700 W Chandler Blvd, Chandler, AZ 85226. It's been our permanent home since the 2016/17 season.",
+          "We watch at Fibbers Irish Pub, 1989 W Elliot Rd, Chandler, AZ 85224. It's been our permanent home since the 2016/17 season.",
       },
       {
         question: "What time do doors open?",
@@ -45,6 +45,12 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Is it family friendly?",
         answer: "Yes. All ages are welcome at our watch parties.",
+      },
+      {
+        question: "Are watch parties accessible?",
+        answer:
+          "Yes. Fibbers has a wheelchair accessible entrance, accessible parking, accessible restrooms, and accessible seating. The venue is on the first floor with no steps. If you have specific accessibility needs, contact us at board@arizonaspurs.com before your visit and we'll make sure you're taken care of.",
+        long: true,
       },
     ],
   },
