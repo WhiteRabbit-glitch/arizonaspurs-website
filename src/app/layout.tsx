@@ -29,6 +29,40 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  name: "Arizona Spurs",
+  alternateName: "Arizona Spurs Supporters Club",
+  description:
+    "Arizona's official Tottenham Hotspur supporters club. Watch parties at Fibber Magee's Pub in Chandler since 2014.",
+  url: "https://arizonaspurs.com",
+  foundingDate: "2014",
+  email: "board@arizonaspurs.com",
+  sameAs: [
+    "https://www.facebook.com/ArizonaSpurs",
+    "https://www.instagram.com/officialarizonaspurs/",
+    "https://x.com/ArizonaSpurs",
+  ],
+  location: {
+    "@type": "Place",
+    name: "Fibber Magee's Pub",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1989 W Elliot Rd",
+      addressLocality: "Chandler",
+      addressRegion: "AZ",
+      postalCode: "85224",
+      addressCountry: "US",
+    },
+  },
+  memberOf: {
+    "@type": "SportsOrganization",
+    name: "Tottenham Hotspur FC",
+    url: "https://www.tottenhamhotspur.com",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,6 +73,12 @@ export default function RootLayout({
       lang="en"
       className={`${limelight.variable} ${josefinSans.variable} h-full`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-white text-near-black antialiased">
         <a
           href="#main-content"

@@ -40,7 +40,7 @@ export default function Footer() {
             Watching together since 2014.
           </p>
           <p className="font-josefin text-xs uppercase tracking-widest text-gold/80">
-            Est. 2014 · 503(c)(7) Social Club
+            Est. 2014 · 501(c)(7) Social Club
           </p>
         </div>
 

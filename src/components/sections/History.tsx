@@ -18,12 +18,12 @@ const timeline = [
   {
     year: "2016-2017",
     heading: "Fibbers",
-    body: "Arizona Spurs found its permanent home at Fibber Magees in Chandler. The right pub, the right people — and we haven't left since.",
+    body: "Arizona Spurs found its permanent home at Fibber Magee's in Chandler. The right pub, the right people — and we haven't left since.",
   },
   {
     year: "Today",
     heading: "Official & Growing",
-    body: "An officially recognized Tottenham Hotspur FC supporters club since 2014, Arizona Spurs draws members from across the Phoenix metro and beyond. Supporting Spurs is always better together.",
+    body: "An officially recognized Tottenham Hotspur FC supporters club since 2014, Arizona Spurs is a 501(c)(7) nonprofit social club drawing members from across the Phoenix metro and beyond. Supporting Spurs is always better together.",
   },
 ];
 
