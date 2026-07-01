@@ -47,7 +47,7 @@ export default function EventsHero({ match }: { match: Match }) {
 
         <motion.p
           {...fadeUp(0.2)}
-          className="mt-6 mb-10 max-w-xl font-josefin text-lg leading-relaxed tracking-wide text-white/80"
+          className="mt-6 mb-10 max-w-xl font-josefin text-lg leading-relaxed tracking-wide text-white/80 [text-wrap:balance]"
         >
           Every Spurs match is better with the family around you.
           Pull up a chair — we&apos;ve saved you a spot.

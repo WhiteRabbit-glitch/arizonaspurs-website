@@ -37,7 +37,7 @@ export default function Footer() {
           </Link>
           <p className="font-josefin text-sm leading-relaxed text-white/70">
             Tottenham Hotspur supporters club serving the Phoenix metro area.
-            Watching together at Fibbers in Chandler since 2014.
+            Watching together since 2014.
           </p>
           <p className="font-josefin text-xs uppercase tracking-widest text-gold/80">
             Est. 2014 · 503(c)(7) Social Club

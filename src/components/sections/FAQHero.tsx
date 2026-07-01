@@ -33,7 +33,7 @@ export default function FAQHero() {
         />
         <motion.p
           {...fadeUp(0.3)}
-          className="font-josefin text-lg leading-relaxed tracking-wide text-white/80"
+          className="font-josefin text-lg leading-relaxed tracking-wide text-white/80 [text-wrap:balance]"
         >
           Everything you need to know about watching with us, joining the club, and getting to a match.
         </motion.p>

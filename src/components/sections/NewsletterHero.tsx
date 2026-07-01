@@ -33,7 +33,7 @@ export default function NewsletterHero() {
         />
         <motion.p
           {...fadeUp(0.3)}
-          className="font-josefin text-lg leading-relaxed tracking-wide text-white/80"
+          className="font-josefin text-lg leading-relaxed tracking-wide text-white/80 [text-wrap:balance]"
         >
           Match previews, watch party announcements, club news, and the occasional COYS.
           No spam — just Spurs.
