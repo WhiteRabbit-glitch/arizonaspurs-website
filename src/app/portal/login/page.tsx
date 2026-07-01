@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { login } from "./actions";
 
 export const metadata: Metadata = {
@@ -46,6 +47,13 @@ export default async function LoginPage({
             Sign In
           </button>
         </form>
+
+        <p className="mt-6 text-center font-josefin text-sm text-white/60">
+          Don&apos;t have an account?{" "}
+          <Link href="/portal/signup" className="text-gold underline underline-offset-2 hover:text-white">
+            Create one
+          </Link>
+        </p>
       </div>
     </main>
   );

@@ -17,17 +17,45 @@ export default async function PortalPage() {
     redirect("/portal/login");
   }
 
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("role, tier")
+    .eq("id", user.id)
+    .single();
+
+  const isOfficer = profile?.role === "officer";
+  const isPaid = profile?.tier === "paid";
+  // Officers get member-tier access automatically, on top of officer-only tools.
+  const hasMemberAccess = isPaid || isOfficer;
+
   return (
     <main id="main-content" className="min-h-[70vh] bg-cream px-6 py-24">
       <div className="mx-auto max-w-[800px] text-center">
-        <p className="section-label mb-6 justify-center text-spurs-navy/40">Member Portal</p>
-        <h1 className="mb-6 font-limelight text-4xl uppercase tracking-wide text-spurs-navy">
-          Welcome Back
-        </h1>
-        <p className="font-josefin text-base leading-relaxed text-near-black/75">
-          Signed in as {user.email}. The full member portal — club documents, member
-          perks, and more — is coming soon.
+        <p className="section-label mb-6 justify-center text-spurs-navy/40">
+          {isOfficer ? "Officer Portal" : "Member Portal"}
         </p>
+        <h1 className="mb-6 font-limelight text-4xl uppercase tracking-wide text-spurs-navy">
+          {hasMemberAccess ? "Welcome Back" : "Almost There"}
+        </h1>
+
+        {hasMemberAccess ? (
+          <p className="font-josefin text-base leading-relaxed text-near-black/75">
+            Signed in as {user.email}. Thanks for being a paid member — your
+            member perks and club documents are coming soon.
+          </p>
+        ) : (
+          <p className="font-josefin text-base leading-relaxed text-near-black/75">
+            Signed in as {user.email}. Paid membership isn&apos;t live yet —
+            once it launches, your member perks will show up here automatically.
+          </p>
+        )}
+
+        {isOfficer && (
+          <p className="mt-6 border-t border-spurs-navy/10 pt-6 font-josefin text-base leading-relaxed text-near-black/75">
+            Officer tools — board documents, member management — are coming soon.
+          </p>
+        )}
+
         <form action="/portal/logout" method="post" className="mt-8">
           <button
             type="submit"
