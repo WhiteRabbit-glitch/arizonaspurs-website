@@ -36,7 +36,7 @@ export default function History() {
     <section
       ref={ref}
       aria-labelledby="history-heading"
-      className="bg-cream px-6 py-24"
+      className="bg-white px-6 py-24"
     >
       <div className="mx-auto max-w-[1200px]">
 

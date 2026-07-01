@@ -1,18 +1,16 @@
 "use client";
 
-import { useReducedMotion, motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import Image from "next/image";
+import { useReducedMotion, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-// Set imageUrl to the path in /public/images/officers/ once low-poly portraits are ready.
-// Leave as "" to show the monogram fallback.
 const officers = [
-  { name: "Joey Manning", role: "Chairperson", imageUrl: "" },
-  { name: "Chandra Carr", role: "Secretary", imageUrl: "" },
-  { name: "Steve Oxenden", role: "Treasurer", imageUrl: "" },
-  { name: "Jake Altersitz", role: "Social Media", imageUrl: "" },
-  { name: "Aaron Coe", role: "Member-at-Large", imageUrl: "" },
-  { name: "Alex Chapman", role: "Member-at-Large", imageUrl: "" },
+  { name: "Joey Manning",   role: "Chairperson",     imageUrl: "/images/officers/joey-manning.png" },
+  { name: "Chandra Carr",   role: "Secretary",       imageUrl: "/images/officers/chandra-carr.png" },
+  { name: "Alex Chapman",   role: "Treasurer",       imageUrl: "/images/officers/alex-chapman.png" },
+  { name: "Jake Altersitz", role: "Social Media",    imageUrl: "" },
+  { name: "Aaron Coe",      role: "Member-at-Large", imageUrl: "/images/officers/aaron-coe.png" },
+  { name: "Steve Oxenden",  role: "Member-at-Large", imageUrl: "" },
 ];
 
 export default function Officers() {
@@ -24,7 +22,7 @@ export default function Officers() {
     <section
       ref={ref}
       aria-labelledby="officers-heading"
-      className="bg-white px-6 py-24"
+      className="bg-cream px-6 py-24"
     >
       <div className="mx-auto max-w-[1200px]">
 
@@ -45,7 +43,7 @@ export default function Officers() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
           {officers.map((officer, index) => (
             <motion.div
               key={officer.name}
@@ -54,17 +52,20 @@ export default function Officers() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="officer-card"
             >
-              {/* Portrait or monogram fallback */}
               {officer.imageUrl ? (
-                <img
-                  src={officer.imageUrl}
-                  alt={officer.name}
-                  className="mb-4 h-20 w-20 object-cover"
-                />
+                <div className="mb-4 h-20 w-20 overflow-hidden">
+                  <Image
+                    src={officer.imageUrl}
+                    alt={officer.name}
+                    width={80}
+                    height={80}
+                    className="h-full w-full object-cover object-top"
+                  />
+                </div>
               ) : (
                 <div
                   aria-hidden="true"
-                  className="mb-4 flex h-14 w-14 items-center justify-center border border-gold/50 font-limelight text-xl text-gold"
+                  className="mb-4 flex h-20 w-20 items-center justify-center border border-gold/50 font-limelight text-xl text-gold"
                 >
                   {officer.name.split(" ").map((n) => n[0]).join("")}
                 </div>
