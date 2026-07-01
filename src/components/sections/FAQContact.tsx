@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { Mail } from "lucide-react";
 import { useRef } from "react";
 
 export default function FAQContact() {
@@ -61,7 +62,8 @@ export default function FAQContact() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
-          <a href="mailto:board@arizonaspurs.com" className="hero-cta-primary">
+          <a href="mailto:board@arizonaspurs.com" className="hero-cta-primary inline-flex items-center gap-2">
+            <Mail size={16} aria-hidden="true" />
             Email the Board
           </a>
           <Link href="/join" className="hero-cta-secondary">

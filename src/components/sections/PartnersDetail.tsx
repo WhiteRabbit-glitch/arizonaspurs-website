@@ -3,7 +3,7 @@
 import { useReducedMotion, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { partners } from "@/lib/partners";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Mail } from "lucide-react";
 
 export default function PartnersDetail() {
   const prefersReducedMotion = useReducedMotion();
@@ -90,8 +90,9 @@ export default function PartnersDetail() {
         </p>
         <a
           href="mailto:board@arizonaspurs.com"
-          className="hero-cta-primary mt-8 inline-flex"
+          className="hero-cta-primary mt-8 inline-flex items-center gap-2"
         >
+          <Mail size={16} aria-hidden="true" />
           Contact the Board
         </a>
       </motion.div>

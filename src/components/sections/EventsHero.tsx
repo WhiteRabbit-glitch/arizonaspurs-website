@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useReducedMotion, motion } from "framer-motion";
+import { Calendar, MapPin } from "lucide-react";
 import type { Match } from "@/lib/match";
 
 function formatMatchDate(isoString: string) {
@@ -88,16 +89,18 @@ export default function EventsHero({ match }: { match: Match }) {
           </p>
           <time
             dateTime={match.date}
-            className="font-josefin text-xl font-700 uppercase tracking-wide text-white"
+            className="inline-flex items-center gap-2 font-josefin text-xl font-700 uppercase tracking-wide text-white"
           >
+            <Calendar size={18} aria-hidden="true" className="text-gold" />
             {date} &nbsp;·&nbsp; {time}
           </time>
           <a
             href={match.venueUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-josefin text-sm tracking-wide text-gold/80 underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            className="inline-flex items-center gap-1.5 font-josefin text-sm tracking-wide text-gold/80 underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
           >
+            <MapPin size={14} aria-hidden="true" />
             {match.venueLabel}
           </a>
         </motion.div>
