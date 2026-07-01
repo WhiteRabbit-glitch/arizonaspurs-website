@@ -84,17 +84,6 @@ export default function NewsletterCTA() {
 
         </div>
 
-        {/* Ornamental divider — bottom */}
-        <motion.div
-          initial={prefersReducedMotion ? false : { opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.4, delay: 0.4 }}
-          className="divider-ornamental mt-16"
-          aria-hidden="true"
-        >
-          <span>◆</span>
-        </motion.div>
-
       </div>
     </section>
   );

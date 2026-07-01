@@ -19,14 +19,21 @@
 }
 
 /* Base */
-html {
-  font-family: var(--font-josefin), Georgia, serif;
+@layer base {
+  html {
+    font-family: var(--font-josefin), Georgia, serif;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-near-black);
+  }
 }
 
-body {
-  background-color: var(--color-white);
-  color: var(--color-near-black);
-}
+/* Custom component classes — layered so Tailwind utilities (hidden, md:flex, etc.)
+   can correctly override them. Unlayered CSS always beats the utilities layer
+   regardless of specificity, which silently broke responsive classes before. */
+@layer components {
 
 /* Skip link — visible on focus only */
 .sr-only:focus {
@@ -642,6 +649,8 @@ body {
   outline-offset: 2px;
   border-radius: 2px;
 }
+
+} /* end @layer components */
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {

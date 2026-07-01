@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useReducedMotion, motion } from "framer-motion";
 
 export default function Hero() {
@@ -37,22 +38,46 @@ export default function Hero() {
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video> */}
 
-      {/* Navy overlay */}
+      {/* Cheering man — pinned bottom-right, atmospheric layer behind the vignette */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-spurs-navy/60"
+        className="pointer-events-none absolute bottom-0 right-[-2%] z-[1] h-[95%] w-[55%] max-w-[680px]"
+      >
+        <Image
+          src="/images/cheering-man-v2.png"
+          alt=""
+          fill
+          className="object-contain object-right-bottom"
+          priority
+        />
+      </div>
+
+      {/* Radial vignette — darkest at center (behind the text) so it stays legible, fades out toward the edges so the figure reads clearly */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 z-[2]"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(10,21,53,0.65) 0%, rgba(10,21,53,0.35) 50%, rgba(10,21,53,0.05) 100%)",
+        }}
+      />
+
+      {/* Bottom fade — blends the hero into the section below */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 z-[2] h-24 bg-gradient-to-t from-deep-navy to-transparent"
       />
 
       {/* Decorative lines — top and bottom */}
-      <div aria-hidden="true" className="absolute inset-x-0 top-8 px-8">
+      <div aria-hidden="true" className="absolute inset-x-0 top-8 z-10 px-8">
         <div className="mx-auto max-w-[1200px] border-t border-gold/30" />
       </div>
-      <div aria-hidden="true" className="absolute inset-x-0 bottom-8 px-8">
+      <div aria-hidden="true" className="absolute inset-x-0 bottom-8 z-10 px-8">
         <div className="mx-auto max-w-[1200px] border-t border-gold/30" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex max-w-[1200px] flex-col items-center px-6 py-24 text-center">
+      <div className="relative z-10 mx-auto flex max-w-xl flex-col items-center px-6 py-24 text-center">
 
         {/* Section label */}
         <motion.div {...fadeUp(0)}>
@@ -64,9 +89,11 @@ export default function Hero() {
         {/* Headline */}
         <motion.h1
           {...fadeUp(0.15)}
-          className="font-limelight text-5xl uppercase leading-none tracking-[0.05em] text-white sm:text-7xl md:text-8xl"
+          className="font-limelight text-6xl uppercase leading-[0.92] tracking-[0.02em] text-white sm:text-7xl md:text-8xl"
         >
-          Arizona Spurs
+          Arizona
+          <br />
+          Spurs
         </motion.h1>
 
         {/* Gold rule */}
@@ -79,7 +106,7 @@ export default function Hero() {
         {/* Subheadline */}
         <motion.p
           {...fadeUp(0.35)}
-          className="max-w-xl font-josefin text-lg font-400 leading-relaxed tracking-wide text-white/80"
+          className="max-w-sm font-josefin text-lg font-400 leading-relaxed tracking-wide text-white/80"
         >
           Phoenix&apos;s officially recognized Tottenham Hotspur supporters club.
           <br />
