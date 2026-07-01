@@ -27,6 +27,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    icon: [
+      { url: "/mark-navy.svg", type: "image/svg+xml", media: "(prefers-color-scheme: light)" },
+      { url: "/mark-white.svg", type: "image/svg+xml", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 const organizationSchema = {
