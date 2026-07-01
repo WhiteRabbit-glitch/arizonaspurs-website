@@ -40,9 +40,9 @@ function FAQItem({
           {open && (
             <motion.div
               key="answer"
-              initial={{ height: 0, opacity: 0 }}
+              initial={prefersReducedMotion ? false : { height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
+              exit={prefersReducedMotion ? {} : { height: 0, opacity: 0 }}
               transition={{ duration: 0.25, ease: "easeOut" as const }}
               className="overflow-hidden"
             >

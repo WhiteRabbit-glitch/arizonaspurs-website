@@ -7,7 +7,7 @@ const pillars = [
   {
     number: "I",
     title: "Community",
-    body: "Arizona is a big state with Tottenham supporters scattered across it. Arizona Spurs exists to change that — to give every Spurs fan in the region a home. Fibber Magee's in Chandler is our heartbeat: a place where familiar faces show up every match day, where new faces quickly become regulars, and where the final whistle is never the end of the conversation. Community is not a feature of what we do. It is the reason we exist.",
+    body: "The Phoenix metro is home to Tottenham supporters scattered across it with no place to gather. Arizona Spurs exists to change that — to give every Spurs fan in the region a home. Fibber Magee's in Chandler is our heartbeat: a place where familiar faces show up every match day, where new faces quickly become regulars, and where the final whistle is never the end of the conversation. Community is not a feature of what we do. It is the reason we exist.",
   },
   {
     number: "II",
@@ -17,7 +17,7 @@ const pillars = [
   {
     number: "III",
     title: "The Game",
-    body: "Arizona Spurs holds official recognition from Tottenham Hotspur FC — a distinction that comes with real accountability and a real connection to the club in London. Part of our mission is to grow the culture of association football across Arizona: to introduce the sport to new fans, to create spaces where the game is taken seriously, and to represent Tottenham Hotspur with the integrity the club deserves. One watch party at a time, we are building something that lasts. Come On You Spurs.",
+    body: "Arizona Spurs holds official recognition from Tottenham Hotspur FC — a distinction that comes with real accountability and a real connection to the club in London. Part of our mission is to grow the culture of association football across the Phoenix metro: to introduce the sport to new fans, to create spaces where the game is taken seriously, and to represent Tottenham Hotspur with the integrity the club deserves. One watch party at a time, we are building something that lasts. Come On You Spurs.",
   },
 ];
 

@@ -105,7 +105,7 @@ export default function PrivacyPage() {
             within 30 days.
           </p>
 
-          <h2>Age Requirement and Children's Privacy</h2>
+          <h2>Age Requirement and Children&apos;s Privacy</h2>
           <p>
             You must be 16 or older to join Arizona Spurs, or have verifiable parental permission.
             We do not knowingly collect personal data from anyone under 16 without parental

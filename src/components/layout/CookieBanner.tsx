@@ -37,6 +37,8 @@ export default function CookieBanner() {
   useEffect(() => {
     const stored = readConsent();
     if (stored) {
+      // Reading localStorage must wait until after hydration to avoid an SSR/client mismatch.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setConsent(stored);
     } else {
       const t = setTimeout(() => setBannerVisible(true), 600);
@@ -110,7 +112,7 @@ export default function CookieBanner() {
                 id="cookie-banner-desc"
                 className="max-w-[600px] font-josefin text-sm leading-relaxed text-white/70"
               >
-                We use cookies for analytics (Google Analytics and Kit). See our{" "}
+                We use cookies for analytics and to improve your experience. See our{" "}
                 <Link
                   href="/cookies"
                   className="text-gold underline underline-offset-2 transition-colors hover:text-white"

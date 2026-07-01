@@ -71,7 +71,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Is Arizona Spurs an official club?",
         answer:
-          "Yes. Arizona Spurs has been an officially recognized Tottenham Hotspur FC supporters club since 2014. We are also a 503(c)(7) nonprofit social club — all dues are reinvested into club operations and community initiatives.",
+          "Yes. Arizona Spurs has been an officially recognized Tottenham Hotspur FC supporters club since 2014. We are also a 501(c)(7) nonprofit social club — all dues are reinvested into club operations and community initiatives.",
         long: true,
       },
     ],
@@ -114,7 +114,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Does Arizona Spurs do community outreach?",
         answer:
-          "Yes. We organize annual food drives and community initiatives across the Phoenix metro area. As a 503(c)(7) nonprofit social club, giving back is central to what we do.",
+          "Yes. We organize annual food drives and community initiatives across the Phoenix metro area. As a 501(c)(7) nonprofit social club, giving back is central to what we do.",
       },
     ],
   },

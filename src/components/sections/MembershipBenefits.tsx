@@ -85,7 +85,7 @@ export default function MembershipBenefits() {
           transition={{ duration: 0.4, delay: 0.5 }}
           className="mt-12 text-center font-josefin text-xs uppercase tracking-[0.15em] text-spurs-navy/40"
         >
-          Arizona Spurs is a 503(c)(7) nonprofit social club.
+          Arizona Spurs is a 501(c)(7) nonprofit social club.
           All dues are reinvested into club operations and community initiatives.
         </motion.p>
 

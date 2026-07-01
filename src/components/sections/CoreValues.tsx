@@ -8,7 +8,7 @@ const values = [
   {
     number: "I",
     title: "Community",
-    body: "We exist to bring Spurs fans together across Arizona — at Fibbers, at events, and beyond. Every match is an opportunity to grow the family.",
+    body: "We exist to bring Spurs fans together across the Phoenix metro — at Fibbers, at events, and beyond. Every match is an opportunity to grow the family.",
   },
   {
     number: "II",
@@ -95,7 +95,7 @@ export default function CoreValues() {
           ))}
         </div>
 
-        {/* 503(c)7 note */}
+        {/* 501(c)7 note */}
         <motion.p
           initial={prefersReducedMotion ? false : { opacity: 0 }}
           animate={headingInView ? { opacity: 1 } : {}}

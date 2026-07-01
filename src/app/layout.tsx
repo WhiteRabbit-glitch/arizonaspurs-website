@@ -20,7 +20,7 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Arizona Spurs | Tottenham Hotspur Supporters Club — Phoenix",
   description:
-    "Arizona's official Tottenham Hotspur supporters club. Watch parties at Fibbers in Chandler. Est. 2014.",
+    "Phoenix's officially recognized Tottenham Hotspur supporters club. Watch parties at Fibbers in Chandler. Est. 2014.",
   metadataBase: new URL("https://arizonaspurs.com"),
   openGraph: {
     siteName: "Arizona Spurs",
@@ -41,7 +41,7 @@ const organizationSchema = {
   name: "Arizona Spurs",
   alternateName: "Arizona Spurs Supporters Club",
   description:
-    "Arizona's official Tottenham Hotspur supporters club. Watch parties at Fibber Magee's Pub in Chandler since 2014.",
+    "Phoenix's officially recognized Tottenham Hotspur supporters club. Watch parties at Fibber Magee's Pub in Chandler since 2014.",
   url: "https://arizonaspurs.com",
   foundingDate: "2014",
   email: "board@arizonaspurs.com",

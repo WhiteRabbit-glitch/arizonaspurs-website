@@ -14,7 +14,7 @@ export default function JoinHero() {
   return (
     <section
       aria-label="Join Arizona Spurs"
-      className="bg-spurs-navy px-6 py-28 text-center"
+      className="bg-spurs-navy px-6 pb-28 pt-16 text-center sm:pt-28"
     >
       <div className="mx-auto max-w-[800px]">
         <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-white/50">

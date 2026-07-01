@@ -6,7 +6,7 @@ import JoinForm from "@/components/sections/JoinForm";
 export const metadata: Metadata = {
   title: "Join the Club | Arizona Spurs",
   description:
-    "Join Arizona Spurs — the official Tottenham Hotspur supporters club in Phoenix. Free membership, newsletter, and watch parties at Fibbers in Chandler.",
+    "Join Arizona Spurs — an officially recognized Tottenham Hotspur supporters club serving the Phoenix metro area. Free membership, newsletter, and watch parties at Fibbers in Chandler.",
   openGraph: {
     title: "Join the Club | Arizona Spurs",
     description:

@@ -81,7 +81,8 @@ export default function Hero() {
           {...fadeUp(0.35)}
           className="max-w-xl font-josefin text-lg font-400 leading-relaxed tracking-wide text-white/80"
         >
-          Phoenix&apos;s official Tottenham Hotspur supporters club.
+          Phoenix&apos;s officially recognized Tottenham Hotspur supporters club.
+          <br />
           Watching together since 2014.
         </motion.p>
 

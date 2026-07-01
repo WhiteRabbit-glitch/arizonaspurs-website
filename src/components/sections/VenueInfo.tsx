@@ -107,7 +107,7 @@ export default function VenueInfo() {
                 className="hero-cta-secondary inline-flex items-center gap-2 !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
               >
                 <ExternalLink size={16} aria-hidden="true" />
-                Fibber Magee's Website
+                Fibber Magee&apos;s Website
               </a>
             </div>
           </motion.div>

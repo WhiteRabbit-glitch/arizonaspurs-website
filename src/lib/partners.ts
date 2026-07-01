@@ -19,6 +19,6 @@ export const partners: Partner[] = [
     role: "Official Watch Party Venue",
     bio: "Arizona Spurs has watched every Spurs match at Fibber Magee's since the 2016/17 season. Full kitchen, full bar, and a room that gets loud at kickoff. Find us at 1989 W Elliot Rd in Chandler every match day.",
     url: "https://www.fibbermageespub.com/",
-    logoUrl: "",
+    logoUrl: "/images/partners/fibbers.png",
   },
 ];

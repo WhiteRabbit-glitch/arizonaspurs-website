@@ -86,7 +86,7 @@ export default function PartnersDetail() {
         </h3>
         <div aria-hidden="true" className="mx-auto my-6 h-px w-16 bg-gold" />
         <p className="font-josefin text-base leading-relaxed text-near-black/70">
-          We're a growing club with members across the Phoenix metro. If you want to connect with us, reach out to the board.
+          We&apos;re a growing club with members across the Phoenix metro. If you want to connect with us, reach out to the board.
         </p>
         <a
           href="mailto:board@arizonaspurs.com"

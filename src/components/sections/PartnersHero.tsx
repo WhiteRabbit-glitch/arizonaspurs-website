@@ -14,7 +14,7 @@ export default function PartnersHero() {
   return (
     <section
       aria-labelledby="partners-hero-heading"
-      className="bg-spurs-navy px-6 py-24 text-center"
+      className="bg-spurs-navy px-6 pb-24 pt-14 text-center sm:pt-24"
     >
       <div className="mx-auto max-w-[700px]">
         <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-white/40">
