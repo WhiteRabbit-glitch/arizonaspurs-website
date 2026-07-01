@@ -69,7 +69,6 @@ export default function NewsletterArchive() {
                 >
                   <span className="issue-date">{formatIssueDate(issue.date)}</span>
                   <span className="issue-content">
-                    <span className="issue-title">{issue.title}</span>
                     <span className="issue-description">{issue.description}</span>
                   </span>
                   <span className="issue-arrow" aria-hidden="true">→</span>
