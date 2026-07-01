@@ -196,6 +196,73 @@ body {
   opacity: 0.8;
 }
 
+/* Membership benefit cards */
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.75rem;
+  border-top: 2px solid var(--color-gold);
+  position: relative;
+}
+
+.benefit-card--soon {
+  opacity: 0.5;
+}
+
+.benefit-badge {
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+/* Join form inputs */
+.join-label {
+  display: block;
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-spurs-navy);
+  margin-bottom: 0.5rem;
+}
+
+.join-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-near-black);
+  background-color: var(--color-white);
+  border: 1px solid rgba(19, 34, 87, 0.25);
+  outline: none;
+  transition: border-color 150ms ease-out;
+  min-height: 44px;
+}
+
+.join-input:focus {
+  border-color: var(--color-spurs-navy);
+}
+
+.join-input:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.join-input::placeholder {
+  color: rgba(13, 17, 23, 0.35);
+}
+
 /* FAQ accordion */
 .faq-item {
   padding-block: 1.25rem;
