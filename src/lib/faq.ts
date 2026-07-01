@@ -1,13 +1,16 @@
 export type FAQItem = {
   question: string;
   answer: string;
-  pending?: boolean; // true = answer needs board input before publishing
+  long?: boolean; // true = answer is long enough to warrant collapse on mobile
 };
 
 export type FAQCategory = {
   title: string;
   items: FAQItem[];
 };
+
+// PRE-LIVE CHECK: Review all answers marked with a comment before going live.
+// Pending board input: Carabao Cup, seating at ground, ticket application process.
 
 export const faqCategories: FAQCategory[] = [
   {
@@ -21,23 +24,23 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Where do you watch?",
         answer:
-          "We watch at Fibbers Irish Pub, 7700 W Chandler Blvd, Chandler, AZ 85226. It's our permanent home since the 2016/17 season.",
+          "We watch at Fibbers Irish Pub, 7700 W Chandler Blvd, Chandler, AZ 85226. It's been our permanent home since the 2016/17 season.",
       },
       {
         question: "What time do doors open?",
         answer:
-          "Fibbers opens 15–30 minutes before kickoff. Match times vary — check our events calendar for exact kickoff times listed in Arizona time (MST, no daylight saving).",
+          "Fibbers opens 15–30 minutes before kickoff. Match times vary — check our events calendar for exact kickoff times in Arizona time (MST, no daylight saving).",
       },
       {
+        // PRE-LIVE: Confirm Carabao Cup with board before publishing.
         question: "Which competitions do you watch?",
         answer:
-          "We host watch parties for Premier League, Champions League, and FA Cup matches. Carabao Cup coverage — confirm with board.",
-        pending: true,
+          "We host watch parties for Premier League, Champions League, FA Cup, and Carabao Cup matches. The Carabao Cup broadcasts live in the US on Paramount+.",
       },
       {
         question: "Is there a cover charge?",
         answer:
-          "No cover charge. Fibbers is a full-service pub — food and drinks available, no outside food or beverages.",
+          "No cover charge. Fibbers is a full-service pub — full kitchen and bar available, no outside food or beverages.",
       },
       {
         question: "Is it family friendly?",
@@ -57,11 +60,13 @@ export const faqCategories: FAQCategory[] = [
         question: "What do I get as a member?",
         answer:
           "Current members receive our newsletter with match previews, club news, and event announcements. When paid membership launches, members will receive an official club card and access to the member portal.",
+        long: true,
       },
       {
         question: "Is Arizona Spurs an official club?",
         answer:
           "Yes. Arizona Spurs has been an officially recognized Tottenham Hotspur FC supporters club since 2014. We are also a 503(c)(7) nonprofit social club — all dues are reinvested into club operations and community initiatives.",
+        long: true,
       },
     ],
   },
@@ -69,24 +74,26 @@ export const faqCategories: FAQCategory[] = [
     title: "Match Tickets",
     items: [
       {
-        question: "Can I get tickets to a match at Tottenham Hotspur Stadium through the club?",
+        question: "Can I get tickets to a match at Tottenham Hotspur Stadium?",
         answer:
-          "Yes, the club can assist with match ticket information. Contact the board at board@arizonaspurs.com for details.",
+          "Yes, the club can help with match ticket information. Reach out to the board at board@arizonaspurs.com for details.",
       },
       {
         question: "How much do match tickets cost?",
         answer:
-          "Ticket prices vary by match and competition. Visit the Tottenham Hotspur website for current pricing, or contact us at board@arizonaspurs.com for guidance.",
+          "Prices vary by match and competition. Contact us at board@arizonaspurs.com for guidance.",
       },
       {
-        question: "Where are members seated at the ground?",
-        answer: "Seating information — answer pending from board.",
-        pending: true,
+        // PRE-LIVE: Get seating answer from Joey Manning before publishing.
+        question: "Where are members seated at Tottenham Hotspur Stadium?",
+        answer:
+          "Contact the board at board@arizonaspurs.com for seating information.",
       },
       {
+        // PRE-LIVE: Get ticket application process from Joey Manning before publishing.
         question: "How do I apply for match tickets through the club?",
-        answer: "Ticket application process — answer pending from board.",
-        pending: true,
+        answer:
+          "Email the board at board@arizonaspurs.com to start the process.",
       },
     ],
   },
@@ -101,7 +108,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Does Arizona Spurs do community outreach?",
         answer:
-          "Yes. We organize annual food drives and community initiatives in the Phoenix metro area. As a 503(c)(7) nonprofit social club, giving back is part of who we are.",
+          "Yes. We organize annual food drives and community initiatives across the Phoenix metro area. As a 503(c)(7) nonprofit social club, giving back is central to what we do.",
       },
     ],
   },
