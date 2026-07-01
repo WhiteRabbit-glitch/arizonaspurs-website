@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Script from "next/script";
 import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -134,8 +135,11 @@ export default function JoinForm() {
             transition={{ duration: 0.4, delay: 0.3 }}
             className="mt-8 text-center font-josefin text-xs leading-relaxed text-near-black/40"
           >
-            By signing up you agree to receive club news and match updates.
-            Unsubscribe any time. Your information is never sold or shared.
+            By signing up, you agree to Arizona Spurs membership and consent to your name and email being shared with Tottenham Hotspur Football Club to register you with the official supporters network (linked membership). Your data is used only for membership and communications, processed under GDPR and our{" "}
+            <Link href="/privacy" className="underline underline-offset-2 hover:text-near-black/70 transition-colors">
+              Privacy Policy
+            </Link>{" "}
+            and Tottenham Hotspur&apos;s policies. You can withdraw consent anytime. You confirm you are 16+ or have parental permission.
           </motion.p>
 
         </div>
