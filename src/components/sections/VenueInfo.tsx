@@ -3,6 +3,7 @@
 import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { MapPin, ExternalLink } from "lucide-react";
 
 const venue = {
   name: "Fibber Magee's Pub",
@@ -94,16 +95,18 @@ export default function VenueInfo() {
                 href={venue.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-cta-primary"
+                className="hero-cta-primary inline-flex items-center gap-2"
               >
+                <MapPin size={16} aria-hidden="true" />
                 Get Directions
               </a>
               <a
                 href={venue.websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-cta-secondary !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
+                className="hero-cta-secondary inline-flex items-center gap-2 !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
               >
+                <ExternalLink size={16} aria-hidden="true" />
                 Fibber Magee's Website
               </a>
             </div>

@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { useReducedMotion, motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
+import { Plus } from "lucide-react";
 import { faqCategories } from "@/lib/faq";
 
 function FAQItem({
@@ -29,12 +30,11 @@ function FAQItem({
           <span className="font-josefin text-base font-600 uppercase tracking-wide text-spurs-navy text-left">
             {question}
           </span>
-          <span
+          <Plus
             aria-hidden="true"
+            size={20}
             className={`faq-icon shrink-0 transition-transform duration-200 ${open ? "rotate-45" : ""}`}
-          >
-            +
-          </span>
+          />
         </button>
         <AnimatePresence initial={false}>
           {open && (

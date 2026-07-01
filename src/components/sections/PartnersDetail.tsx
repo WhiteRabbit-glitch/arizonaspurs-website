@@ -3,6 +3,7 @@
 import { useReducedMotion, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { partners } from "@/lib/partners";
+import { ExternalLink } from "lucide-react";
 
 export default function PartnersDetail() {
   const prefersReducedMotion = useReducedMotion();
@@ -63,9 +64,10 @@ export default function PartnersDetail() {
               href={partner.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="hero-cta-secondary self-start !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
+              className="hero-cta-secondary inline-flex items-center gap-2 self-start !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
             >
               Visit {partner.name}
+              <ExternalLink size={14} aria-hidden="true" />
             </a>
           </motion.article>
         ))}

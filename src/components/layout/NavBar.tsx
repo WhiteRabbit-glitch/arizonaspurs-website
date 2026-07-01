@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -60,25 +61,13 @@ export default function NavBar() {
           aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
-          className="relative flex h-11 w-11 flex-col items-center justify-center gap-[5px] md:hidden"
+          className="flex h-11 w-11 items-center justify-center text-white md:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
-          <span
-            className="hamburger-bar"
-            style={{
-              transform: menuOpen ? "rotate(45deg) translate(5px, 5px)" : undefined,
-            }}
-          />
-          <span
-            className="hamburger-bar"
-            style={{ opacity: menuOpen ? 0 : undefined }}
-          />
-          <span
-            className="hamburger-bar"
-            style={{
-              transform: menuOpen ? "rotate(-45deg) translate(5px, -5px)" : undefined,
-            }}
-          />
+          {menuOpen
+            ? <X size={22} aria-hidden="true" />
+            : <Menu size={22} aria-hidden="true" />
+          }
         </button>
       </nav>
 
