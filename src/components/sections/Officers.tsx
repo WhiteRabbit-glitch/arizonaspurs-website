@@ -8,9 +8,9 @@ const officers = [
   { name: "Joey Manning",   role: "Chairperson",     imageUrl: "/images/officers/joey-manning.png" },
   { name: "Chandra Carr",   role: "Secretary",       imageUrl: "/images/officers/chandra-carr.png" },
   { name: "Alex Chapman",   role: "Treasurer",       imageUrl: "/images/officers/alex-chapman.png" },
-  { name: "Jake Altersitz", role: "Social Media",    imageUrl: "" },
+  { name: "Jake Altersitz", role: "Social Media",    imageUrl: "/images/officers/placeholder.png" },
   { name: "Aaron Coe",      role: "Member-at-Large", imageUrl: "/images/officers/aaron-coe.png" },
-  { name: "Steve Oxenden",  role: "Member-at-Large", imageUrl: "" },
+  { name: "Steve Oxenden",  role: "Member-at-Large", imageUrl: "/images/officers/placeholder.png" },
 ];
 
 export default function Officers() {
