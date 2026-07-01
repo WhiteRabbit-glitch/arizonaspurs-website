@@ -4,7 +4,7 @@ import type { Match } from "./match";
 // GOOGLE_CALENDAR_ID  — your public Google Calendar ID (found in Calendar settings > Integrate)
 // GOOGLE_CALENDAR_API_KEY — Google Cloud Console > APIs & Services > Credentials
 
-const CALENDAR_ID = process.env.GOOGLE_CALENDAR_ID;
+const CALENDAR_ID = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_ID;
 const API_KEY = process.env.GOOGLE_CALENDAR_API_KEY;
 
 // Board should name watch party events exactly like:
