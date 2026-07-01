@@ -4,21 +4,7 @@ import { useReducedMotion, motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-// Add or remove partners here — logoUrl is optional (text fallback shown if omitted)
-const partners = [
-  {
-    name: "Fibbers Irish Pub",
-    role: "Official Watch Party Venue",
-    url: "https://www.fibbersirishpub.com",
-    logoUrl: "", // TODO: add /images/partners/fibbers.png when available
-  },
-  {
-    name: "Tottenham Hotspur FC",
-    role: "Official Club",
-    url: "https://www.tottenhamhotspur.com",
-    logoUrl: "", // TODO: add /images/partners/thfc.png when available
-  },
-];
+import { partners } from "@/lib/partners";
 
 export default function Partners() {
   const prefersReducedMotion = useReducedMotion();

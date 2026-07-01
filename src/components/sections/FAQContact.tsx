@@ -59,7 +59,7 @@ export default function FAQContact() {
           initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-4"
+          className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
           <a href="mailto:board@arizonaspurs.com" className="hero-cta-primary">
             Email the Board
@@ -92,7 +92,7 @@ export default function FAQContact() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/arizonaspurs"
+              href="https://www.instagram.com/officialarizonaspurs/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message Arizona Spurs on Instagram"

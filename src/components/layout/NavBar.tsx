@@ -98,8 +98,8 @@ export default function NavBar() {
                   </Link>
                 </li>
               ))}
-              <li className="pt-4">
-                <Link href="/join" className="nav-cta w-full" onClick={() => setMenuOpen(false)}>
+              <li className="flex justify-center pt-4">
+                <Link href="/join" className="nav-cta" onClick={() => setMenuOpen(false)}>
                   Join the Club
                 </Link>
               </li>

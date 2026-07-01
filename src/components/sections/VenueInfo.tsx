@@ -5,10 +5,10 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const venue = {
-  name: "Fibbers Irish Pub",
+  name: "Fibber Magee's Pub",
   address: "1989 W Elliot Rd, Chandler, AZ 85224",
   directionsUrl: "https://maps.google.com/?q=Fibber+Magees+1989+W+Elliot+Rd+Chandler+AZ+85224",
-  websiteUrl: "https://www.fibbersirishpub.com",
+  websiteUrl: "https://www.fibbermageespub.com/",
   details: [
     { label: "Doors", value: "Open 30 minutes before kickoff" },
     { label: "Parking", value: "Free lot on-site" },
@@ -104,7 +104,7 @@ export default function VenueInfo() {
                 rel="noopener noreferrer"
                 className="hero-cta-secondary !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
               >
-                Fibbers Website
+                Fibber Magee's Website
               </a>
             </div>
           </motion.div>

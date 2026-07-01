@@ -88,7 +88,7 @@ export default function Hero() {
         {/* CTAs */}
         <motion.div
           {...fadeUp(0.5)}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
           <Link href="/join" className="hero-cta-primary">
             Join the Club

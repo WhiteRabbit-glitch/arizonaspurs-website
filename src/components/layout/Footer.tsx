@@ -88,7 +88,7 @@ export default function Footer() {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/arizonaspurs"
+                href="https://www.instagram.com/officialarizonaspurs/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Arizona Spurs on Instagram"

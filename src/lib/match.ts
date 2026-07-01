@@ -13,6 +13,6 @@ export const fallbackMatch: Match = {
   opponent: "TBD",
   competition: "Premier League",
   date: "2025-08-16T07:30:00",
-  venueLabel: "Fibbers Irish Pub, Chandler AZ",
+  venueLabel: "Fibber Magee's Pub, Chandler AZ",
   venueUrl: "https://maps.google.com/?q=Fibber+Magees+1989+W+Elliot+Rd+Chandler+AZ+85224",
 };
