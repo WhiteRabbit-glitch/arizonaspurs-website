@@ -531,6 +531,45 @@ body {
   border-radius: 2px;
 }
 
+/* Cookie consent toggle switch */
+.consent-toggle {
+  display: block;
+  width: 2.75rem;
+  height: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 150ms ease-out;
+  border: none;
+  flex-shrink: 0;
+}
+
+.consent-toggle::after {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 150ms ease-out;
+}
+
+.consent-toggle--on {
+  background-color: var(--color-gold);
+}
+
+.consent-toggle--on::after {
+  transform: translateX(1.25rem);
+}
+
+.consent-toggle:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
 /* Legal page content */
 .legal-content h2 {
   font-family: var(--font-josefin), Georgia, serif;

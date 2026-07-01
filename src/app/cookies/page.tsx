@@ -30,15 +30,17 @@ export default function CookiesPage() {
             on this site.
           </p>
 
-          <h2>Cookies We Use</h2>
+          <h2>Cookie Categories</h2>
 
-          <h2>Strictly Necessary</h2>
+          <h2>Necessary</h2>
           <p>
-            This site does not require any strictly necessary cookies to function. You can
-            browse all content without accepting cookies.
+            This site does not set strictly necessary cookies. You can read all content and
+            navigate the site without accepting any cookies. Necessary is always shown as
+            enabled in our cookie preferences panel because it represents the baseline — no
+            cookies are set in this category.
           </p>
 
-          <h2>Analytics — Google Analytics</h2>
+          <h2>Statistics</h2>
           <p>
             With your consent, we use Google Analytics (Google LLC) to understand how visitors
             use this site. Google Analytics collects anonymized data including pages visited,
@@ -52,42 +54,42 @@ export default function CookiesPage() {
             <li><strong>_gid</strong> — Distinguishes unique users. Expires: 24 hours.</li>
           </ul>
           <p>
-            These cookies are only loaded after you accept cookies via the banner on this site.
-            Google{"'"}s privacy policy is available at{" "}
+            These cookies load only after you enable Statistics in the cookie preferences
+            banner. Google{"'"}s privacy policy:{" "}
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
               policies.google.com/privacy
             </a>.
           </p>
 
-          <h2>Third-Party — Kit (ConvertKit)</h2>
+          <h2>Marketing</h2>
           <p>
             Our membership and newsletter sign-up forms are powered by Kit (ConvertKit, Inc.).
-            When you interact with a sign-up form, Kit{"'"}s script may set cookies to track
-            form submissions and measure engagement with our newsletter emails. Kit also
-            provides us with analytics on open rates and click-throughs within our emails.
+            When you interact with a sign-up form on /join or /newsletter, Kit{"'"}s script
+            may set cookies to track form submissions and measure engagement with our emails —
+            including open rates and click-throughs. Kit also provides us with analytics on
+            how subscribers interact with our broadcasts.
           </p>
           <p>
-            Kit{"'"}s cookies are set when you visit a page containing one of our sign-up
-            forms (/join, /newsletter). Kit{"'"}s privacy policy is available at{" "}
+            Kit{"'"}s privacy policy:{" "}
             <a href="https://kit.com/privacy-policy" target="_blank" rel="noopener noreferrer">
               kit.com/privacy-policy
             </a>.
           </p>
 
-          <h2>Consent and Managing Your Preferences</h2>
+          <h2>Managing Your Preferences</h2>
           <p>
-            When you first visit this site, a banner gives you the option to accept or decline
-            non-essential cookies. Your choice is stored in your browser and applied on future
-            visits.
+            When you first visit this site, a banner gives you three options: Accept All,
+            Necessary Only, or Manage (to set Statistics and Marketing individually). Your
+            choice is stored in your browser.
           </p>
-          <p>To change your cookie preference:</p>
+          <p>To change your preferences after your initial choice:</p>
           <ul>
             <li>Clear your browser cookies and reload the site — the banner will reappear</li>
-            <li>Or adjust cookie settings directly in your browser</li>
+            <li>Or clear cookies for this site in your browser settings directly</li>
           </ul>
           <p>
-            Declining cookies will not affect your ability to read this site or submit
-            membership forms. It will prevent Google Analytics from loading.
+            Declining all non-essential cookies will not affect your ability to read this site
+            or submit membership forms. It will prevent Google Analytics from loading.
           </p>
 
           <h2>Changes to This Policy</h2>

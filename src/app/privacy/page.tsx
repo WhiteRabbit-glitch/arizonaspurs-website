@@ -105,10 +105,45 @@ export default function PrivacyPage() {
             within 30 days.
           </p>
 
-          <h2>Age Requirement</h2>
+          <h2>Age Requirement and Children's Privacy</h2>
           <p>
             You must be 16 or older to join Arizona Spurs, or have verifiable parental permission.
-            We do not knowingly collect data from children under 16.
+            We do not knowingly collect personal data from anyone under 16 without parental
+            consent. If we become aware that a person under 16 has submitted their data without
+            parental permission, we will delete that data promptly. If you believe a child under
+            16 has provided us with personal information without appropriate consent, contact us
+            at <a href="mailto:board@arizonaspurs.com">board@arizonaspurs.com</a>.
+          </p>
+
+          <h2>Security</h2>
+          <p>
+            We take reasonable steps to protect your personal data against unauthorized access,
+            disclosure, alteration, or destruction. Your data is stored within Kit{"'"}s
+            platform, which maintains its own security standards. We do not store personal data
+            on our own servers. We use HTTPS across the entire site to encrypt data in transit.
+          </p>
+          <p>
+            No method of transmission over the internet is completely secure. If you have reason
+            to believe your data has been compromised, contact us immediately at{" "}
+            <a href="mailto:board@arizonaspurs.com">board@arizonaspurs.com</a>.
+          </p>
+
+          <h2>California Residents (CCPA)</h2>
+          <p>
+            If you are a California resident, the California Consumer Privacy Act (CCPA) gives
+            you additional rights:
+          </p>
+          <ul>
+            <li>Right to know what personal information we collect, use, and share</li>
+            <li>Right to delete your personal information (subject to certain exceptions)</li>
+            <li>Right to opt out of the sale of your personal information</li>
+            <li>Right to non-discrimination for exercising your CCPA rights</li>
+          </ul>
+          <p>
+            Arizona Spurs does not sell personal information. We share your name and email with
+            Tottenham Hotspur FC solely for membership registration purposes, which is not a
+            sale under CCPA. To exercise your rights or request information about your data,
+            contact us at <a href="mailto:board@arizonaspurs.com">board@arizonaspurs.com</a>.
           </p>
 
           <h2>Cookies and Analytics</h2>

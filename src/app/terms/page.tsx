@@ -106,6 +106,24 @@ export default function TermsPage() {
             liability where it cannot be excluded under applicable law.
           </p>
 
+          <h2>Governing Law</h2>
+          <p>
+            These terms are governed by the laws of the State of Arizona, United States, without
+            regard to conflict of law principles. Any legal action arising from these terms or
+            your use of this site will be brought exclusively in the state or federal courts
+            located in Maricopa County, Arizona, and you consent to the personal jurisdiction
+            of those courts.
+          </p>
+
+          <h2>Dispute Resolution</h2>
+          <p>
+            Before filing a legal claim, we ask that you contact us at{" "}
+            <a href="mailto:board@arizonaspurs.com">board@arizonaspurs.com</a> so we have the
+            opportunity to resolve the issue informally. Most concerns can be resolved quickly
+            through direct communication. Arizona Spurs is a volunteer-run nonprofit club and
+            we are committed to addressing problems in good faith.
+          </p>
+
           <h2>Changes to These Terms</h2>
           <p>
             We may update these terms at any time. Changes will be posted on this page with an
