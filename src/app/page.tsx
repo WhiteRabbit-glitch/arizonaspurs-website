@@ -10,7 +10,7 @@ export default async function Home() {
   const match = (await fetchNextMatch()) ?? fallbackMatch;
 
   return (
-    <main>
+    <main id="main-content">
       <Hero />
       <CoreValues />
       <NextMatch match={match} />

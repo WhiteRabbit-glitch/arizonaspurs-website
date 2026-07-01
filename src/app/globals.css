@@ -196,6 +196,39 @@ body {
   opacity: 0.8;
 }
 
+/* FAQ accordion */
+.faq-item {
+  padding-block: 1.25rem;
+}
+
+.faq-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  min-height: 44px;
+}
+
+.faq-trigger:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.faq-icon {
+  font-family: var(--font-josefin), Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
 /* Venue map */
 .venue-map-frame {
   width: 100%;

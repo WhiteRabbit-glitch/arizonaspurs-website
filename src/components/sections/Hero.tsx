@@ -14,7 +14,6 @@ export default function Hero() {
 
   return (
     <section
-      id="main-content"
       aria-label="Welcome to Arizona Spurs"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
