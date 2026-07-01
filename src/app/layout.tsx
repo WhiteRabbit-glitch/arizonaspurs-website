@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Limelight, Josefin_Sans } from "next/font/google";
 import NavBar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
+import CookieBanner from "@/components/layout/CookieBanner";
 import "./globals.css";
 
 const limelight = Limelight({
@@ -48,6 +49,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
