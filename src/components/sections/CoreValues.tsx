@@ -18,7 +18,7 @@ const values = [
   {
     number: "III",
     title: "The Game",
-    body: "The official Tottenham Hotspur supporters club in Arizona. We promote the culture of association football in the region, one watch party at a time.",
+    body: "An officially recognized Tottenham Hotspur supporters club serving the Phoenix metro. We promote the culture of association football in the region, one watch party at a time.",
   },
 ];
 

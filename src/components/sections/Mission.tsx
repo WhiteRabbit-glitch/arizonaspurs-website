@@ -47,11 +47,12 @@ export default function Mission() {
 
         <motion.div {...fadeUp(0.35)} className="mt-10 flex flex-col gap-5 text-left">
           <p className="font-josefin text-base leading-relaxed text-near-black/75">
-            We are the official Tottenham Hotspur FC supporters club for the state of Arizona.
-            Founded in 2014 and incorporated as an Arizona nonprofit social club, Arizona Spurs
-            is built by supporters, run by supporters, and accountable to our members. Our
-            official recognition by Tottenham Hotspur FC reflects a genuine commitment to
-            standards — the kind of organization that represents Spurs with character.
+            We are an officially recognized Tottenham Hotspur FC supporters club serving
+            the Phoenix metro area. Founded in 2014 and incorporated as an Arizona nonprofit
+            social club, Arizona Spurs is built by supporters, run by supporters, and
+            accountable to our members. Our official recognition by Tottenham Hotspur FC
+            reflects a genuine commitment to standards — the kind of organization that
+            represents Spurs with character.
           </p>
           <p className="font-josefin text-base leading-relaxed text-near-black/75">
             Our purpose goes beyond match day. We are here to make sure that Tottenham fans

@@ -9,11 +9,11 @@ import AboutCTA from "@/components/sections/AboutCTA";
 export const metadata: Metadata = {
   title: "About | Arizona Spurs",
   description:
-    "Founded in 2014, Arizona Spurs is the official Tottenham Hotspur supporters club for Arizona — built on community, service, and the beautiful game.",
+    "Founded in 2014, Arizona Spurs is an officially recognized Tottenham Hotspur supporters club serving the Phoenix metro area — built on community, service, and the beautiful game.",
   openGraph: {
     title: "About | Arizona Spurs",
     description:
-      "Founded in 2014, Arizona Spurs is the official Tottenham Hotspur supporters club for Arizona — built on community, service, and the beautiful game.",
+      "Founded in 2014, Arizona Spurs is an officially recognized Tottenham Hotspur supporters club serving the Phoenix metro area — built on community, service, and the beautiful game.",
   },
 };
 
