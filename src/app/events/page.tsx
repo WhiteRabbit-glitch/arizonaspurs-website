@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import EventsHero from "@/components/sections/EventsHero";
-import CalendarEmbed from "@/components/sections/CalendarEmbed";
+import MatchSchedule from "@/components/sections/MatchSchedule";
 import VenueInfo from "@/components/sections/VenueInfo";
-import { fetchNextMatch } from "@/lib/gcal";
+import { fetchNextMatch, fetchUpcomingMatches } from "@/lib/gcal";
 import { fallbackMatch } from "@/lib/match";
 
 export const metadata: Metadata = {
@@ -17,7 +17,10 @@ export const metadata: Metadata = {
 };
 
 export default async function EventsPage() {
-  const match = (await fetchNextMatch()) ?? fallbackMatch;
+  const [match, events] = await Promise.all([
+    fetchNextMatch().then((m) => m ?? fallbackMatch),
+    fetchUpcomingMatches(),
+  ]);
 
   const eventSchema = {
     "@context": "https://schema.org",
@@ -55,7 +58,7 @@ export default async function EventsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
       />
       <EventsHero match={match} />
-      <CalendarEmbed />
+      <MatchSchedule events={events} />
       <VenueInfo />
     </main>
   );
