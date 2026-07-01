@@ -11,7 +11,7 @@ const venue = {
   directionsUrl: "https://maps.google.com/?q=Fibber+Magees+1989+W+Elliot+Rd+Chandler+AZ+85224",
   websiteUrl: "https://www.fibbermageespub.com/",
   details: [
-    { label: "Doors", value: "Open 30 minutes before kickoff" },
+    { label: "Doors", value: "Open 15 minutes before kickoff" },
     { label: "Parking", value: "Free lot on-site" },
     { label: "Atmosphere", value: "Family friendly, all ages welcome" },
     { label: "Food & Drink", value: "Full kitchen and bar — no outside food" },

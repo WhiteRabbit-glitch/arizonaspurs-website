@@ -29,7 +29,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "What time do doors open?",
         answer:
-          "Fibbers opens 15–30 minutes before kickoff. Match times vary — check our events calendar for exact kickoff times in Arizona time (MST, no daylight saving).",
+          "Fibbers opens 15 minutes before kickoff. Match times vary — check our events calendar for exact kickoff times in Arizona time (MST, no daylight saving).",
       },
       {
         // PRE-LIVE: Confirm Carabao Cup with board before publishing.
