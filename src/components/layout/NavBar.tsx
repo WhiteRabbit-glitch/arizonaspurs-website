@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
@@ -23,12 +24,15 @@ export default function NavBar() {
         className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6"
       >
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-limelight text-2xl uppercase tracking-widest text-white"
-          aria-label="Arizona Spurs — home"
-        >
-          Arizona Spurs
+        <Link href="/" aria-label="Arizona Spurs — home">
+          <Image
+            src="/logo-white.svg"
+            alt="Arizona Spurs"
+            width={32}
+            height={44}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav links */}

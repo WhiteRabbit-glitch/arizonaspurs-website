@@ -82,7 +82,7 @@ export default function Hero() {
           className="max-w-xl font-josefin text-lg font-400 leading-relaxed tracking-wide text-white/80"
         >
           Phoenix&apos;s official Tottenham Hotspur supporters club.
-          Watching together at Fibbers in Chandler since 2014.
+          Watching together since 2014.
         </motion.p>
 
         {/* CTAs */}

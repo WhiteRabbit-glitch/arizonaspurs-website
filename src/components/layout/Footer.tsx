@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "About", href: "/about" },
@@ -28,12 +29,14 @@ export default function Footer() {
 
         {/* Column 1 — Identity */}
         <div className="flex flex-col gap-4">
-          <Link
-            href="/"
-            aria-label="Arizona Spurs — home"
-            className="font-limelight text-2xl uppercase tracking-widest text-white"
-          >
-            Arizona Spurs
+          <Link href="/" aria-label="Arizona Spurs — home">
+            <Image
+              src="/logo-white.svg"
+              alt="Arizona Spurs"
+              width={40}
+              height={55}
+              className="h-14 w-auto"
+            />
           </Link>
           <p className="font-josefin text-sm leading-relaxed text-white/70">
             Tottenham Hotspur supporters club serving the Phoenix metro area.
