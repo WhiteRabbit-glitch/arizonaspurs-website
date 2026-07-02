@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { FileText } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
@@ -28,6 +29,14 @@ export default async function PortalPage() {
   // Officers get member-tier access automatically, on top of officer-only tools.
   const hasMemberAccess = isPaid || isOfficer;
 
+  // Signed URL only succeeds if the storage RLS policy allows this user —
+  // paid members and officers, per the "documents" bucket policy.
+  const bylawsUrl = hasMemberAccess
+    ? (
+        await supabase.storage.from("documents").createSignedUrl("bylaws.pdf", 60 * 5)
+      ).data?.signedUrl
+    : null;
+
   return (
     <main id="main-content" className="min-h-[70vh] bg-cream px-6 py-24">
       <div className="mx-auto max-w-[800px] text-center">
@@ -40,14 +49,26 @@ export default async function PortalPage() {
 
         {hasMemberAccess ? (
           <p className="font-josefin text-base leading-relaxed text-near-black/75">
-            Signed in as {user.email}. Thanks for being a paid member — your
-            member perks and club documents are coming soon.
+            Signed in as {user.email}. Thanks for being a paid member — more
+            member perks are coming soon.
           </p>
         ) : (
           <p className="font-josefin text-base leading-relaxed text-near-black/75">
             Signed in as {user.email}. Paid membership isn&apos;t live yet —
             once it launches, your member perks will show up here automatically.
           </p>
+        )}
+
+        {bylawsUrl && (
+          <a
+            href={bylawsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-cta-secondary mt-8 inline-flex items-center gap-2 !border-spurs-navy/30 !text-spurs-navy hover:!border-gold hover:!text-gold"
+          >
+            <FileText size={16} aria-hidden="true" />
+            Club Bylaws (PDF)
+          </a>
         )}
 
         {isOfficer && (
