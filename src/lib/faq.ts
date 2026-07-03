@@ -9,8 +9,7 @@ export type FAQCategory = {
   items: FAQItem[];
 };
 
-// PRE-LIVE CHECK: Review all answers marked with a comment before going live.
-// Pending board input: Carabao Cup, seating at ground, ticket application process.
+
 
 export const faqCategories: FAQCategory[] = [
   {
@@ -32,10 +31,9 @@ export const faqCategories: FAQCategory[] = [
           "Fibbers opens 15 minutes before kickoff. Match times vary — check our events calendar for exact kickoff times in Arizona time (MST, no daylight saving).",
       },
       {
-        // PRE-LIVE: Confirm Carabao Cup with board before publishing.
         question: "Which competitions do you watch?",
         answer:
-          "We host watch parties for Premier League, Champions League, FA Cup, and Carabao Cup matches. The Carabao Cup broadcasts live in the US on Paramount+.",
+          "We host watch parties for Premier League, European Competitions, FA Cup, and Carabao Cup matches.",
       },
       {
         question: "Is there a cover charge?",
@@ -90,13 +88,11 @@ export const faqCategories: FAQCategory[] = [
           "Prices vary by match and competition. Contact us at board@arizonaspurs.com for guidance.",
       },
       {
-        // PRE-LIVE: Get seating answer from Joey Manning before publishing.
         question: "Where are members seated at Tottenham Hotspur Stadium?",
         answer:
           "Contact the board at board@arizonaspurs.com for seating information.",
       },
       {
-        // PRE-LIVE: Get ticket application process from Joey Manning before publishing.
         question: "How do I apply for match tickets through the club?",
         answer:
           "Email the board at board@arizonaspurs.com to start the process.",
