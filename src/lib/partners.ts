@@ -12,7 +12,7 @@ export const partners: Partner[] = [
     role: "Official Club",
     bio: "Arizona Spurs is an officially recognized Tottenham Hotspur supporters club. That status connects our members to the club directly through official communications, supporter resources, and a place in the global Spurs supporters network.",
     url: "https://www.tottenhamhotspur.com",
-    logoUrl: "",
+    logoUrl: "/images/partners/spurs-ossc-positive.png",
   },
   {
     name: "Fibber Magee's Pub",
