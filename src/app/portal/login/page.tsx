@@ -31,9 +31,17 @@ export default async function LoginPage({
             <input id="email" name="email" type="email" required className="join-input" />
           </div>
           <div>
-            <label htmlFor="password" className="join-label !text-white/70">
-              Password
-            </label>
+            <div className="flex items-baseline justify-between">
+              <label htmlFor="password" className="join-label !text-white/70">
+                Password
+              </label>
+              <Link
+                href="/portal/forgot-password"
+                className="mb-2 font-josefin text-xs text-gold underline underline-offset-2 hover:text-white"
+              >
+                Forgot password?
+              </Link>
+            </div>
             <input id="password" name="password" type="password" required className="join-input" />
           </div>
 
