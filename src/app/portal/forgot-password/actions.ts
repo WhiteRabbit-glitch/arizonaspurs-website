@@ -9,11 +9,15 @@ export async function requestPasswordReset(formData: FormData) {
   const origin = (await headers()).get("origin");
   const email = formData.get("email") as string;
 
-  await supabase.auth.resetPasswordForEmail(email, {
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
     redirectTo: `${origin}/auth/confirm?next=/portal/reset-password`,
   });
 
-  // Redirect to the same success state regardless of outcome — do not
-  // reveal whether an account exists for the submitted email.
+  // Logged server-side only — the user always sees the same success
+  // state so we don't reveal whether an account exists for this email.
+  if (error) {
+    console.error("resetPasswordForEmail failed:", error.status, error.message);
+  }
+
   redirect("/portal/forgot-password?success=1");
 }
