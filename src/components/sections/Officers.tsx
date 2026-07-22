@@ -10,7 +10,6 @@ const officers = [
   { name: "Alex Chapman",   role: "Treasurer",       imageUrl: "/images/officers/alex-chapman.png" },
   { name: "Jake Altersitz", role: "Social Media",    imageUrl: "/images/officers/jake-altersitz.png" },
   { name: "Aaron Coe",      role: "Member-at-Large", imageUrl: "/images/officers/aaron-coe.png" },
-  { name: "Steve Oxenden",  role: "Member-at-Large", imageUrl: "/images/officers/placeholder.png" },
 ];
 
 export default function Officers() {
