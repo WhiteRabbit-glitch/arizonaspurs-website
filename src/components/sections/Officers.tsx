@@ -42,14 +42,14 @@ export default function Officers() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="flex flex-wrap justify-center gap-8">
           {officers.map((officer, index) => (
             <motion.div
               key={officer.name}
               initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="officer-card"
+              className="officer-card w-[calc((100%-2rem)/2)] sm:w-[calc((100%-4rem)/3)] lg:w-[calc((100%-10rem)/6)]"
             >
               {officer.imageUrl ? (
                 <div className="mb-4 h-20 w-20 overflow-hidden">
