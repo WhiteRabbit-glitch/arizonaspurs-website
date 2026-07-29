@@ -11,6 +11,12 @@ export type NewsletterIssue = {
 
 export const newsletters: NewsletterIssue[] = [
   {
+    title: "July 2026",
+    date: "2026-07-01",
+    description: "Twelve Spurs at the World Cup, the August 1 general members meeting, and the season opener at Fibber Magee's.",
+    url: "https://official-arizona-spurs.kit.com/posts/a-new-look-and-a-new-season-arizona-spurs-july-2026",
+  },
+  {
     title: "June 2026",
     date: "2026-06-01",
     description: "Match recaps, upcoming watch parties, and news from the board.",
