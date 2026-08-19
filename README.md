@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arizona Spurs
 
-## Getting Started
+The website for Arizona Spurs, the Tottenham Hotspur supporters club in Phoenix. Match schedules, event calendar, membership sign-up, partner venues, the newsletter archive, and a members' portal.
 
-First, run the development server:
+Built with Next.js 16 (App Router), React 19, TypeScript and Tailwind CSS 4. Authentication runs on Supabase.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Running it locally
+
+You need Node 20 or newer and a Supabase project.
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Copy the environment template and fill in your own values:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cp .env.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | What it is |
+| --- | --- |
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon/public key |
+| `NEXT_PUBLIC_GOOGLE_CALENDAR_ID` | Calendar the events page embeds |
+| `NEXT_PUBLIC_GA_ID` | Google Analytics measurement ID |
 
-## Learn More
+Then start the dev server:
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+It serves on http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## The pages
 
-## Deploy on Vercel
+| Route | What's there |
+| --- | --- |
+| `/` | Next match, mission, core values, club history |
+| `/about` | Who the club is, the pillars it runs on, the officers |
+| `/events` | Match schedule and the embedded club calendar |
+| `/join` | Membership benefits and the sign-up form |
+| `/partners` | Partner venues and what each one offers members |
+| `/newsletter` | Subscribe, plus the back-issue archive |
+| `/faq` | Accordion of common questions |
+| `/portal` | Members' area — login, signup, password reset |
+| `/privacy`, `/terms`, `/cookies`, `/accessibility` | Policies and the accessibility statement |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How it's laid out
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Path | Contents |
+| --- | --- |
+| `src/app` | Routes, `layout.tsx`, `sitemap.ts`, `robots.ts` |
+| `src/components/sections` | Page sections — one file per block of a page |
+| `src/components/layout` | Header, footer, the shell every page sits in |
+| `src/components/ui` | Shared primitives |
+| `src/lib` | Match data, FAQ content, partners, newsletters, Google Calendar |
+| `src/lib/supabase` | Browser client, server client, and the auth proxy |
+
+Read `STYLE_GUIDE.md` before changing anything visual. The site is built to WCAG 2.2 AA and the accessibility statement at `/accessibility` is a public promise, so keep contrast, focus states and keyboard navigation intact.
+
+## Commands
+
+| Command | Does |
+| --- | --- |
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve the production build |
+| `npm run lint` | ESLint |
