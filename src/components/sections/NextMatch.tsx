@@ -53,9 +53,9 @@ export default function NextMatch({ match }: { match: Match }) {
           transition={{ duration: 0.55, delay: 0.1 }}
           className="flex flex-col items-center gap-6 text-center md:flex-row md:justify-center md:gap-10"
         >
-          {/* Home — Arizona Spurs */}
+          {/* Home — Tottenham Hotspur */}
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
-            Arizona Spurs
+            Tottenham Hotspur
           </span>
 
           {/* VS divider */}
