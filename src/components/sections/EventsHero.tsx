@@ -65,7 +65,7 @@ export default function EventsHero({ match }: { match: Match }) {
           className="flex flex-col items-center gap-4 md:flex-row md:gap-10"
         >
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
-            Arizona Spurs
+            Tottenham Hotspur
           </span>
           <span aria-hidden="true" className="font-josefin text-sm font-600 uppercase tracking-[0.25em] text-gold/70">
             vs
