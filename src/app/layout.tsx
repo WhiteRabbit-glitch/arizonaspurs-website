@@ -31,7 +31,10 @@ export const metadata: Metadata = {
     icon: [
       { url: "/mark-navy.svg", type: "image/svg+xml", media: "(prefers-color-scheme: light)" },
       { url: "/mark-white.svg", type: "image/svg+xml", media: "(prefers-color-scheme: dark)" },
+      // Google Search needs a square icon at a multiple of 48px; the mark SVGs aren't square.
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
     ],
+    apple: "/icon-192.png",
   },
 };
 
