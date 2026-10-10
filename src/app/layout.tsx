@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Arizona Spurs | Tottenham Hotspur Supporters Club — Phoenix",
   description:
     "Phoenix's officially recognized Tottenham Hotspur supporters club. Watch parties at Fibbers in Chandler. Est. 2014.",
-  metadataBase: new URL("https://arizonaspurs.com"),
+  metadataBase: new URL("https://www.arizonaspurs.com"),
   openGraph: {
     siteName: "Arizona Spurs",
     locale: "en_US",
@@ -45,7 +45,7 @@ const organizationSchema = {
   alternateName: "Arizona Spurs Supporters Club",
   description:
     "Phoenix's officially recognized Tottenham Hotspur supporters club. Watch parties at Fibber Magee's Pub in Chandler since 2014.",
-  url: "https://arizonaspurs.com",
+  url: "https://www.arizonaspurs.com",
   foundingDate: "2014",
   email: "board@arizonaspurs.com",
   sameAs: [

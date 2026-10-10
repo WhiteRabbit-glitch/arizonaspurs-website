@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/members", "/api/"],
       },
     ],
-    sitemap: "https://arizonaspurs.com/sitemap.xml",
+    sitemap: "https://www.arizonaspurs.com/sitemap.xml",
   };
 }
