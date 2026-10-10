@@ -78,7 +78,7 @@ export default function FAQContact() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-10 flex flex-col items-center gap-4"
         >
-          <p className="font-josefin text-xs uppercase tracking-[0.15em] text-white/40">
+          <p className="font-josefin text-xs uppercase tracking-[0.15em] text-white/60">
             Faster responses on social
           </p>
           <div className="flex items-center gap-6">

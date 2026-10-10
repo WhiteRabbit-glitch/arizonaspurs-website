@@ -26,7 +26,7 @@ export default function AboutPhoto() {
           sizes="(max-width: 948px) calc(100vw - 48px), 900px"
           className="h-auto w-full"
         />
-        <p className="mt-4 text-center font-josefin text-sm text-spurs-navy/50">
+        <p className="mt-4 text-center font-josefin text-sm text-spurs-navy/70">
           Arizona Spurs members at Fibber Magee&apos;s
         </p>
       </motion.div>

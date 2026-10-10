@@ -40,7 +40,7 @@ export default async function PortalPage() {
   return (
     <main id="main-content" className="min-h-[70vh] bg-cream px-6 py-24">
       <div className="mx-auto max-w-[800px] text-center">
-        <p className="section-label mb-6 justify-center text-spurs-navy/40">
+        <p className="section-label mb-6 justify-center text-spurs-navy/70">
           {isOfficer ? "Officer Portal" : "Member Portal"}
         </p>
         <h1 className="mb-6 font-limelight text-4xl uppercase tracking-wide text-spurs-navy">

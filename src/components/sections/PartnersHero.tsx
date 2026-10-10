@@ -17,7 +17,7 @@ export default function PartnersHero() {
       className="bg-spurs-navy px-6 pb-24 pt-14 text-center sm:pt-24"
     >
       <div className="mx-auto max-w-[700px]">
-        <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-white/40">
+        <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-white/60">
           Our Partners
         </motion.p>
 

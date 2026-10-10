@@ -37,7 +37,7 @@ export default async function LoginPage({
               </label>
               <Link
                 href="/portal/forgot-password"
-                className="mb-2 font-josefin text-xs text-gold underline underline-offset-2 hover:text-white"
+                className="mb-2 inline-flex min-h-11 items-center font-josefin text-sm text-gold underline underline-offset-2 hover:text-white"
               >
                 Forgot password?
               </Link>

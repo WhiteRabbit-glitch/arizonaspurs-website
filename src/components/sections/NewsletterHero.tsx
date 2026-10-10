@@ -24,7 +24,7 @@ export default function NewsletterHero() {
           {...fadeUp(0.1)}
           className="font-limelight text-5xl uppercase leading-tight tracking-wide text-white md:text-6xl"
         >
-          The Newsletter
+          Club News
         </motion.h1>
         <motion.div
           {...fadeUp(0.2)}

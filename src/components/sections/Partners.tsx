@@ -27,7 +27,7 @@ export default function Partners() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             Our Partners
           </p>
           <h2
@@ -71,7 +71,7 @@ export default function Partners() {
               <p className="font-josefin text-base font-700 uppercase tracking-wide text-spurs-navy">
                 {partner.name}
               </p>
-              <p className="font-josefin text-xs uppercase tracking-[0.12em] text-spurs-navy/50">
+              <p className="font-josefin text-xs uppercase tracking-[0.12em] text-spurs-navy/70">
                 {partner.role}
               </p>
             </motion.a>

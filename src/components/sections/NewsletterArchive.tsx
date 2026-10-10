@@ -31,7 +31,7 @@ export default function NewsletterArchive() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             Past Issues
           </p>
           <h2
@@ -47,7 +47,7 @@ export default function NewsletterArchive() {
             initial={prefersReducedMotion ? false : { opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.4 }}
-            className="text-center font-josefin text-base text-near-black/50"
+            className="text-center font-josefin text-base text-near-black/70"
           >
             Past issues coming soon.
           </motion.p>
@@ -82,7 +82,7 @@ export default function NewsletterArchive() {
           initial={prefersReducedMotion ? false : { opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.4, delay: 0.4 }}
-          className="mt-12 text-center font-josefin text-xs uppercase tracking-[0.15em] text-near-black/30"
+          className="mt-12 text-center font-josefin text-xs uppercase tracking-[0.15em] text-near-black/70"
         >
           Issues open on Kit&apos;s platform in a new tab.
         </motion.p>

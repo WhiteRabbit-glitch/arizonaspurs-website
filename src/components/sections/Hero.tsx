@@ -108,7 +108,7 @@ export default function Hero() {
         {/* Subheadline */}
         <motion.p
           {...fadeUp(0.35)}
-          className="max-w-sm font-josefin text-lg font-400 leading-relaxed tracking-wide text-white/80"
+          className="max-w-sm font-josefin text-lg font-400 leading-relaxed tracking-wide text-white"
         >
           Phoenix&apos;s officially recognized Tottenham Hotspur supporters club.
           <br />
@@ -141,7 +141,7 @@ export default function Hero() {
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             className="flex flex-col items-center gap-2"
           >
-            <span className="font-josefin text-xs uppercase tracking-[0.2em] text-white/40">
+            <span className="font-josefin text-xs uppercase tracking-[0.2em] text-white">
               Scroll
             </span>
             <svg
@@ -149,7 +149,7 @@ export default function Hero() {
               height="16"
               viewBox="0 0 16 16"
               fill="none"
-              className="text-gold/60"
+              className="text-gold"
             >
               <path
                 d="M8 3v10M3 8l5 5 5-5"

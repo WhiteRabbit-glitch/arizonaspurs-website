@@ -51,7 +51,7 @@ export default function MatchSchedule({ events }: { events: CalendarEvent[] }) {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">Full Schedule</p>
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">Full Schedule</p>
           <h2
             id="schedule-heading"
             className="font-josefin text-3xl font-700 uppercase tracking-wide text-spurs-navy md:text-4xl"
@@ -68,7 +68,7 @@ export default function MatchSchedule({ events }: { events: CalendarEvent[] }) {
             className="py-20 text-center"
           >
             <p aria-hidden="true" className="font-limelight text-5xl text-gold/30">◆</p>
-            <p className="mt-6 font-josefin text-sm uppercase tracking-[0.15em] text-spurs-navy/40">
+            <p className="mt-6 font-josefin text-sm uppercase tracking-[0.15em] text-spurs-navy/70">
               Season schedule coming soon
             </p>
           </motion.div>
@@ -103,7 +103,7 @@ export default function MatchSchedule({ events }: { events: CalendarEvent[] }) {
                           <p className="font-josefin text-2xl font-700 leading-none text-spurs-navy">
                             {dayNum}
                           </p>
-                          <p className="mt-1 font-josefin text-[10px] font-600 uppercase tracking-widest text-spurs-navy/40">
+                          <p className="mt-1 font-josefin text-[10px] font-600 uppercase tracking-widest text-spurs-navy/70">
                             {dayName}
                           </p>
                         </div>

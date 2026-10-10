@@ -10,7 +10,7 @@ export default function CookiesPage() {
     <main id="main-content">
       <section className="bg-spurs-navy px-6 py-20 text-center">
         <div className="mx-auto max-w-[700px]">
-          <p className="section-label mb-4 justify-center text-white/40">Legal</p>
+          <p className="section-label mb-4 justify-center text-white/60">Legal</p>
           <h1 className="font-limelight text-4xl uppercase tracking-wide text-white">
             Cookie Policy
           </h1>

@@ -25,7 +25,7 @@ export default function NavBar() {
         className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6"
       >
         {/* Logo */}
-        <Link href="/" aria-label="Arizona Spurs — home" className="flex items-center gap-3">
+        <Link href="/" aria-label="Arizona Spurs — home" className="flex min-h-11 items-center gap-3">
           <Image
             src="/mark-white.svg"
             alt=""

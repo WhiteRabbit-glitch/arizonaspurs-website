@@ -46,7 +46,7 @@ export default function MembershipBenefits() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             What You Get
           </p>
           <h2
@@ -83,7 +83,7 @@ export default function MembershipBenefits() {
           initial={prefersReducedMotion ? false : { opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.4, delay: 0.5 }}
-          className="mt-12 text-center font-josefin text-xs uppercase tracking-[0.15em] text-spurs-navy/40"
+          className="mt-12 text-center font-josefin text-xs uppercase tracking-[0.15em] text-spurs-navy/70"
         >
           Arizona Spurs is a 501(c)(7) nonprofit social club.
           All dues are reinvested into club operations and community initiatives.

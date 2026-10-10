@@ -13,7 +13,7 @@ export default function FAQHero() {
 
   return (
     <section
-      aria-label="Frequently asked questions"
+      aria-label="FAQ introduction"
       className="bg-spurs-navy px-6 pb-28 pt-16 text-center sm:pt-28"
     >
       <div className="mx-auto max-w-[800px]">

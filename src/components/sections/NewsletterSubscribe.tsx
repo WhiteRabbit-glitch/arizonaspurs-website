@@ -29,7 +29,7 @@ export default function NewsletterSubscribe() {
             transition={{ duration: 0.5 }}
             className="mb-10 text-center"
           >
-            <p className="section-label mb-4 justify-center text-spurs-navy/40">
+            <p className="section-label mb-4 justify-center text-spurs-navy/70">
               Free to Subscribe
             </p>
             <h2
