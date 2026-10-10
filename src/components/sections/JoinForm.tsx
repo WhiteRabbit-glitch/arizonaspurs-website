@@ -133,10 +133,10 @@ export default function JoinForm() {
             initial={prefersReducedMotion ? false : { opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.4, delay: 0.3 }}
-            className="mt-8 text-center font-josefin text-xs leading-relaxed text-near-black/40"
+            className="mt-8 text-center font-josefin text-sm leading-relaxed text-near-black/70"
           >
             By signing up, you agree to Arizona Spurs membership and consent to your name and email being shared with Tottenham Hotspur Football Club to register you with the official supporters network (linked membership). Your data is used only for membership and communications, processed under GDPR and our{" "}
-            <Link href="/privacy" className="underline underline-offset-2 hover:text-near-black/70 transition-colors">
+            <Link href="/privacy" className="underline underline-offset-2 hover:text-near-black transition-colors">
               Privacy Policy
             </Link>{" "}
             and Tottenham Hotspur&apos;s policies. You can withdraw consent anytime. You confirm you are 16+ or have parental permission.

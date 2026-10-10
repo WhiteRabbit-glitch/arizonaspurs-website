@@ -23,6 +23,7 @@ export default function AboutPhoto() {
           alt="Arizona Spurs members gathered at Fibber Magee's Pub for a watch party, holding club and Tottenham Hotspur scarves"
           width={2040}
           height={1530}
+          sizes="(max-width: 948px) calc(100vw - 48px), 900px"
           className="h-auto w-full"
         />
         <p className="mt-4 text-center font-josefin text-sm text-spurs-navy/50">

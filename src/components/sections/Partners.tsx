@@ -1,6 +1,7 @@
 "use client";
 
 import { useReducedMotion, motion } from "framer-motion";
+import Image from "next/image";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -52,10 +53,11 @@ export default function Partners() {
               className="partner-card group"
             >
               {partner.logoUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <Image
                   src={partner.logoUrl}
                   alt={partner.name}
+                  width={partner.logoWidth}
+                  height={partner.logoHeight}
                   className="mb-4 h-16 w-auto object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
                 />
               ) : (

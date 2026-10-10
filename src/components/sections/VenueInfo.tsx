@@ -68,6 +68,7 @@ export default function VenueInfo() {
             alt="Illustrated view of Fibber Magee's Pub interior, decorated with Tottenham Hotspur scarves and jerseys"
             width={1448}
             height={1086}
+            sizes="(max-width: 848px) calc(100vw - 48px), 800px"
             className="h-auto w-full"
           />
         </motion.div>
@@ -139,6 +140,8 @@ export default function VenueInfo() {
             <iframe
               src={MAP_EMBED_URL}
               title={`Map showing location of ${venue.name}`}
+              width={600}
+              height={420}
               className="h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

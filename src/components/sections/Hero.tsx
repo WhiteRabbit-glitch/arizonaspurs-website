@@ -48,7 +48,9 @@ export default function Hero() {
           alt=""
           fill
           className="object-contain object-right-bottom"
-          priority
+          sizes="(max-width: 1236px) 55vw, 680px"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
 

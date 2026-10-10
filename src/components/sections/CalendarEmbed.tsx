@@ -69,6 +69,8 @@ export default function CalendarEmbed() {
               <iframe
                 src={embedUrl}
                 title="Arizona Spurs watch party schedule"
+                width={800}
+                height={600}
                 className="h-full w-full border-0"
                 loading="lazy"
               />
