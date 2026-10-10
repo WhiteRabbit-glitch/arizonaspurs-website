@@ -68,6 +68,7 @@ export default function VenueInfo() {
             alt="Illustrated view of Fibber Magee's Pub interior, decorated with Tottenham Hotspur scarves and jerseys"
             width={1448}
             height={1086}
+            sizes="(max-width: 848px) calc(100vw - 48px), 800px"
             className="h-auto w-full"
           />
         </motion.div>

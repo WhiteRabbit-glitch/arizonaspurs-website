@@ -1,6 +1,7 @@
 "use client";
 
 import { useReducedMotion, motion, useInView } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 import { partners } from "@/lib/partners";
 import { ExternalLink, Mail } from "lucide-react";
@@ -29,8 +30,7 @@ export default function PartnersDetail() {
           >
             {/* Logo or initial */}
             {partner.logoUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <Image
                 src={partner.logoUrl}
                 alt={partner.name}
                 width={partner.logoWidth}

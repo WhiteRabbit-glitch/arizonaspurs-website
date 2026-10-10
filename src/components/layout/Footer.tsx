@@ -151,8 +151,8 @@ export default function Footer() {
             <Image
               src="/images/easter-egg-group.png"
               alt=""
-              width={1024}
-              height={1024}
+              width={288}
+              height={288}
               className="h-72 w-72"
             />
           </Link>
