@@ -46,7 +46,7 @@ export default async function EventsPage() {
     organizer: {
       "@type": "SportsOrganization",
       name: "Arizona Spurs",
-      url: "https://arizonaspurs.com",
+      url: "https://www.arizonaspurs.com",
     },
     isAccessibleForFree: true,
   };
