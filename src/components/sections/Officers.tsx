@@ -31,7 +31,7 @@ export default function Officers() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             Leadership
           </p>
           <h2
@@ -72,7 +72,7 @@ export default function Officers() {
               <p className="font-josefin text-sm font-700 uppercase tracking-wide text-spurs-navy">
                 {officer.name}
               </p>
-              <p className="font-josefin text-xs uppercase tracking-[0.12em] text-spurs-navy/50">
+              <p className="font-josefin text-xs uppercase tracking-[0.12em] text-spurs-navy/70">
                 {officer.role}
               </p>
             </motion.div>

@@ -48,7 +48,7 @@ export default function PartnersDetail() {
 
             {/* Role + name */}
             <div className="flex flex-col gap-2">
-              <p className="font-josefin text-xs font-600 uppercase tracking-[0.15em] text-gold">
+              <p className="font-josefin text-xs font-600 uppercase tracking-[0.15em] text-spurs-navy">
                 {partner.role}
               </p>
               <h3 className="font-josefin text-2xl font-700 uppercase tracking-wide text-spurs-navy md:text-3xl">
@@ -82,7 +82,7 @@ export default function PartnersDetail() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="mx-auto mt-24 max-w-[600px] border-t border-spurs-navy/10 pt-16 text-center"
       >
-        <p className="section-label mb-4 justify-center text-spurs-navy/40">Work With Us</p>
+        <p className="section-label mb-4 justify-center text-spurs-navy/70">Work With Us</p>
         <h3 className="font-josefin text-xl font-700 uppercase tracking-wide text-spurs-navy">
           Interested in Partnering?
         </h3>

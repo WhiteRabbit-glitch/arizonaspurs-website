@@ -22,7 +22,7 @@ export default function Mission() {
     >
       <div className="mx-auto max-w-[800px] text-center">
 
-        <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-spurs-navy/40">
+        <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-spurs-navy/70">
           Our Purpose
         </motion.p>
 

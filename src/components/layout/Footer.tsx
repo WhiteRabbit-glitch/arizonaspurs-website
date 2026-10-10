@@ -29,7 +29,7 @@ export default function Footer() {
 
         {/* Column 1 — Identity */}
         <div className="flex flex-col gap-4">
-          <Link href="/" aria-label="Arizona Spurs — home" className="flex items-center gap-3">
+          <Link href="/" aria-label="Arizona Spurs — home" className="flex min-h-11 items-center gap-3">
             <Image
               src="/mark-white.svg"
               alt=""

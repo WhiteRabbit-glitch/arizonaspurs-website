@@ -55,7 +55,7 @@ export default function EventsHero({ match }: { match: Match }) {
         </motion.p>
 
         {/* Next match */}
-        <motion.p {...fadeUp(0.25)} className="section-label mb-8 justify-center text-white/40">
+        <motion.p {...fadeUp(0.25)} className="section-label mb-8 justify-center text-white/60">
           Next Match
         </motion.p>
 
@@ -67,7 +67,7 @@ export default function EventsHero({ match }: { match: Match }) {
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
             Tottenham Hotspur
           </span>
-          <span aria-hidden="true" className="font-josefin text-sm font-600 uppercase tracking-[0.25em] text-gold/70">
+          <span aria-hidden="true" className="font-josefin text-sm font-600 uppercase tracking-[0.25em] text-gold">
             vs
           </span>
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
@@ -77,7 +77,7 @@ export default function EventsHero({ match }: { match: Match }) {
 
         {/* Competition badge */}
         <motion.div {...fadeUp(0.35)} className="mt-5">
-          <span className="border border-gold/40 px-4 py-1 font-josefin text-xs uppercase tracking-[0.2em] text-gold/80">
+          <span className="border border-gold/40 px-4 py-1 font-josefin text-xs uppercase tracking-[0.2em] text-gold">
             {match.competition}
           </span>
         </motion.div>
@@ -98,7 +98,7 @@ export default function EventsHero({ match }: { match: Match }) {
             href={match.venueUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 font-josefin text-sm tracking-wide text-gold/80 underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            className="inline-flex min-h-11 items-center gap-1.5 font-josefin text-sm tracking-wide text-gold underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
           >
             <MapPin size={14} aria-hidden="true" />
             {match.venueLabel}

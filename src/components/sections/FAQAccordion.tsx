@@ -88,7 +88,7 @@ export default function FAQAccordion() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: catIndex * 0.1 }}
             >
-              <p className="section-label mb-8 text-spurs-navy/40">
+              <p className="section-label mb-8 text-spurs-navy/70">
                 {category.title}
               </p>
               <div className="flex flex-col divide-y divide-spurs-navy/10">

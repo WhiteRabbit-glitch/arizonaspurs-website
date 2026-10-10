@@ -48,7 +48,7 @@ export default function CalendarEmbed() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             Full Schedule
           </p>
           <h2
@@ -82,10 +82,10 @@ export default function CalendarEmbed() {
                 <div aria-hidden="true" className="font-limelight text-5xl text-gold/40">
                   ◆
                 </div>
-                <p className="font-josefin text-base font-600 uppercase tracking-wide text-spurs-navy/50">
+                <p className="font-josefin text-base font-600 uppercase tracking-wide text-spurs-navy/70">
                   Calendar coming soon
                 </p>
-                <p className="font-josefin text-sm text-spurs-navy/40">
+                <p className="font-josefin text-sm text-spurs-navy/70">
                   Add <code className="rounded bg-spurs-navy/10 px-1 py-0.5 text-xs">NEXT_PUBLIC_GOOGLE_CALENDAR_ID</code> to your environment variables to display the full match schedule.
                 </p>
               </div>
@@ -97,7 +97,7 @@ export default function CalendarEmbed() {
           initial={prefersReducedMotion ? false : { opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="mt-8 text-center font-josefin text-sm text-spurs-navy/50"
+          className="mt-8 text-center font-josefin text-sm text-spurs-navy/70"
         >
           All times shown in Arizona time (MST — no daylight saving).
         </motion.p>

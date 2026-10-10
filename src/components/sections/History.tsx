@@ -46,7 +46,7 @@ export default function History() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             Our Story
           </p>
           <h2

@@ -35,7 +35,7 @@ export default function NewsletterCTA() {
             initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="section-label mb-6 justify-center text-white/40"
+            className="section-label mb-6 justify-center text-white/60"
           >
             Stay in the Loop
           </motion.p>

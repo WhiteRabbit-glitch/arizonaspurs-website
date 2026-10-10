@@ -45,7 +45,7 @@ export default function VenueInfo() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <p className="section-label mb-4 justify-center text-spurs-navy/40">
+          <p className="section-label mb-4 justify-center text-spurs-navy/70">
             Where We Watch
           </p>
           <h2
@@ -85,7 +85,7 @@ export default function VenueInfo() {
           >
             {/* Address */}
             <div className="border-l-2 border-gold pl-5">
-              <p className="font-josefin text-xs uppercase tracking-[0.15em] text-spurs-navy/50 mb-1">
+              <p className="font-josefin text-xs uppercase tracking-[0.15em] text-spurs-navy/70 mb-1">
                 Address
               </p>
               <p className="font-josefin text-lg font-600 text-spurs-navy">
@@ -97,7 +97,7 @@ export default function VenueInfo() {
             <dl className="flex flex-col gap-4">
               {venue.details.map((item) => (
                 <div key={item.label} className="flex gap-4">
-                  <dt className="w-28 shrink-0 font-josefin text-xs uppercase tracking-[0.12em] text-spurs-navy/50 pt-0.5">
+                  <dt className="w-28 shrink-0 font-josefin text-xs uppercase tracking-[0.12em] text-spurs-navy/70 pt-0.5">
                     {item.label}
                   </dt>
                   <dd className="font-josefin text-base text-near-black/80">

@@ -61,7 +61,7 @@ export default function NextMatch({ match }: { match: Match }) {
           {/* VS divider */}
           <span
             aria-hidden="true"
-            className="font-josefin text-sm font-600 uppercase tracking-[0.25em] text-gold/70"
+            className="font-josefin text-sm font-600 uppercase tracking-[0.25em] text-gold"
           >
             vs
           </span>
@@ -79,7 +79,7 @@ export default function NextMatch({ match }: { match: Match }) {
           transition={{ duration: 0.4, delay: 0.2 }}
           className="mt-6 flex justify-center"
         >
-          <span className="border border-gold/40 px-4 py-1 font-josefin text-xs uppercase tracking-[0.2em] text-gold/80">
+          <span className="border border-gold/40 px-4 py-1 font-josefin text-xs uppercase tracking-[0.2em] text-gold">
             {match.competition}
           </span>
         </motion.div>
@@ -113,7 +113,7 @@ export default function NextMatch({ match }: { match: Match }) {
             href={match.venueUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-josefin text-sm tracking-wide text-gold/80 underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            className="inline-flex min-h-11 items-center font-josefin text-sm tracking-wide text-gold underline-offset-4 hover:text-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
           >
             {match.venueLabel}
           </a>

@@ -28,7 +28,7 @@ export default function JoinForm() {
             transition={{ duration: 0.5 }}
             className="mb-12 text-center"
           >
-            <p className="section-label mb-4 justify-center text-spurs-navy/40">
+            <p className="section-label mb-4 justify-center text-spurs-navy/70">
               Free to Join
             </p>
             <h2
