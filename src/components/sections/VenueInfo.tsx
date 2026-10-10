@@ -139,6 +139,8 @@ export default function VenueInfo() {
             <iframe
               src={MAP_EMBED_URL}
               title={`Map showing location of ${venue.name}`}
+              width={600}
+              height={420}
               className="h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

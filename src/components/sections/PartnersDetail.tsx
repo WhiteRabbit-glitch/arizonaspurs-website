@@ -33,6 +33,8 @@ export default function PartnersDetail() {
               <img
                 src={partner.logoUrl}
                 alt={partner.name}
+                width={partner.logoWidth}
+                height={partner.logoHeight}
                 className="h-16 w-auto object-contain"
               />
             ) : (

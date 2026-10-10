@@ -56,6 +56,8 @@ export default function Partners() {
                 <img
                   src={partner.logoUrl}
                   alt={partner.name}
+                  width={partner.logoWidth}
+                  height={partner.logoHeight}
                   className="mb-4 h-16 w-auto object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
                 />
               ) : (
