@@ -4,6 +4,8 @@ export type Partner = {
   bio: string;
   url: string;
   logoUrl: string;
+  logoWidth: number;
+  logoHeight: number;
 };
 
 export const partners: Partner[] = [
@@ -13,6 +15,8 @@ export const partners: Partner[] = [
     bio: "Arizona Spurs is an officially recognized Tottenham Hotspur supporters club. That status connects our members to the club directly through official communications, supporter resources, and a place in the global Spurs supporters network.",
     url: "https://www.tottenhamhotspur.com",
     logoUrl: "/images/partners/spurs-ossc-positive.png",
+    logoWidth: 6413,
+    logoHeight: 2498,
   },
   {
     name: "Fibber Magee's Pub",
@@ -20,5 +24,7 @@ export const partners: Partner[] = [
     bio: "Arizona Spurs has watched every Spurs match at Fibber Magee's since the 2016/17 season. Full kitchen, full bar, and a room that gets loud at kickoff. Find us at 1989 W Elliot Rd in Chandler every match day.",
     url: "https://www.fibbermageespub.com/",
     logoUrl: "/images/partners/fibbers.png",
+    logoWidth: 1387,
+    logoHeight: 554,
   },
 ];
