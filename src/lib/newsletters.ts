@@ -11,6 +11,18 @@ export type NewsletterIssue = {
 
 export const newsletters: NewsletterIssue[] = [
   {
+    title: "September 2026",
+    date: "2026-09-01",
+    description: "Two points from the first five matches, ten summer signings led by Tonali, 128 fans at Fibbers for the opener, and October fixtures.",
+    url: "https://official-arizona-spurs.kit.com/posts/arizona-spurs-september-update-the-new-season-is-underway",
+  },
+  {
+    title: "August 2026",
+    date: "2026-08-01",
+    description: "The season opener at Brentford, six new signings including Tonali and Robertson, Romero's exit, and the first watch party at Fibbers.",
+    url: "https://official-arizona-spurs.kit.com/posts/the-boys-are-back-and-so-are-we-august-az-spurs-update",
+  },
+  {
     title: "July 2026",
     date: "2026-07-01",
     description: "Twelve Spurs at the World Cup, the August 1 general members meeting, and the season opener at Fibber Magee's.",
