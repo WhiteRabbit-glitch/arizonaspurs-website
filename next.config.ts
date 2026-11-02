@@ -27,7 +27,7 @@ const securityHeaders = [
       // Google Maps embed for venue section
       "frame-src 'self' *.google.com maps.google.com",
       // GA data collection endpoint
-      "connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com app.kit.com *.kit.com",
+      "connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com app.kit.com *.kit.com app.convertkit.com *.convertkit.com",
       "form-action 'self' app.kit.com *.convertkit.com",
       "object-src 'none'",
       "base-uri 'self'",
