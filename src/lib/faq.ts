@@ -21,9 +21,9 @@ export const faqCategories: FAQCategory[] = [
           "Not at all. Our watch parties at Fibbers are open to the public. Everyone is welcome — whether you've supported Spurs your whole life or just discovered them.",
       },
       {
-        question: "Where do you watch?",
+        question: "Where can I watch Tottenham in the Phoenix area?",
         answer:
-          "We watch at Fibbers Irish Pub, 1989 W Elliot Rd, Chandler, AZ 85224. It's been our permanent home since the 2016/17 season.",
+          "We watch Tottenham Hotspur matches at Fibbers Irish Pub, 1989 W Elliot Rd, Chandler, AZ 85224. It's been our permanent home since the 2016/17 season.",
       },
       {
         question: "What time do doors open?",
