@@ -36,6 +36,14 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+    // Defaults plus the widths this site really draws at, so the browser is
+    // not handed the next size up: 288 and 576 are the footer illustration at
+    // 1x and 2x, 480 is the hero figure on phones, 900 is the About photo.
+    imageSizes: [32, 48, 64, 96, 128, 256, 288, 384, 480, 576],
+    deviceSizes: [640, 750, 828, 900, 1080, 1200, 1920, 2048, 3840],
+  },
   async headers() {
     return [
       {
