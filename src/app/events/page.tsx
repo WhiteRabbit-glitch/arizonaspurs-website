@@ -1,20 +1,26 @@
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 import EventsHero from "@/components/sections/EventsHero";
 import MatchSchedule from "@/components/sections/MatchSchedule";
 import VenueInfo from "@/components/sections/VenueInfo";
 import { fetchNextMatch, fetchUpcomingMatches } from "@/lib/gcal";
 import { fallbackMatch } from "@/lib/match";
 
-export const metadata: Metadata = {
-  title: "Events | Arizona Spurs",
-  description:
-    "Watch party schedule for Arizona Spurs — Tottenham Hotspur supporters club in Phoenix. Join us at Fibbers in Chandler for every match.",
-  openGraph: {
+export async function generateMetadata(
+  _props: unknown,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  return {
     title: "Events | Arizona Spurs",
     description:
-      "Watch party schedule for Arizona Spurs. Join us at Fibbers in Chandler for every match.",
-  },
-};
+      "Watch party schedule for Arizona Spurs — Tottenham Hotspur supporters club in Phoenix. Join us at Fibbers in Chandler for every match.",
+    openGraph: {
+      ...(await parent).openGraph,
+      title: "Events | Arizona Spurs",
+      description:
+        "Watch party schedule for Arizona Spurs. Join us at Fibbers in Chandler for every match.",
+    },
+  };
+}
 
 export default async function EventsPage() {
   const [match, events] = await Promise.all([
