@@ -1,5 +1,8 @@
 import type { NextConfig } from "next";
 
+// React needs eval only in development (for error stacks); production does not.
+const isDev = process.env.NODE_ENV === "development";
+
 const securityHeaders = [
   { key: "X-DNS-Prefetch-Control", value: "on" },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
@@ -19,7 +22,7 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Next.js requires unsafe-inline for hydration; GA and Kit need their CDNs
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.convertkit.com f.convertkit.com",
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} *.googletagmanager.com *.convertkit.com f.convertkit.com`,
       "style-src 'self' 'unsafe-inline'",
       // Fonts are self-hosted via next/font — no external font CDN needed
       "font-src 'self'",
