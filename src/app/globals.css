@@ -661,6 +661,50 @@
   border-radius: 2px;
 }
 
+/* Hero entrance. Opt-in: only md+ screens with no reduced-motion preference
+   animate, so on phones the text is simply there in the first paint. Pure CSS,
+   so nothing waits on JavaScript. Stagger with an inline animation-delay. */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--fade-y, 24px));
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-bob {
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-bob {
+    animation: scroll-bob 1.5s ease-in-out infinite;
+  }
+}
+
+@media (min-width: 48rem) and (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fade-up var(--fade-dur, 0.6s) ease-out both;
+  }
+
+  /* Interior page heroes: slightly shorter travel and duration than Home */
+  .fade-up-sm {
+    --fade-y: 20px;
+    --fade-dur: 0.55s;
+  }
+
+  .fade-in {
+    animation: fade-in 0.6s ease-out 1.2s both;
+  }
+}
+
 } /* end @layer components */
 
 /* Respect reduced motion */

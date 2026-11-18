@@ -1,18 +1,12 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useReducedMotion, motion } from "framer-motion";
+
+// The entrance fade is CSS (.fade-up in globals.css), not Framer Motion, so the
+// headline is in the first paint instead of waiting hidden for JavaScript.
+// The CSS only animates on md+ screens with no reduced-motion preference.
+const fadeUp = (delay: number) => ({ style: { animationDelay: `${delay}s` } });
 
 export default function Hero() {
-  const prefersReducedMotion = useReducedMotion();
-
-  const fadeUp = (delay: number) => ({
-    initial: prefersReducedMotion ? false : { opacity: 0, y: 24 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" as const, delay },
-  });
-
   return (
     <section
       aria-label="Welcome to Arizona Spurs"
@@ -82,43 +76,43 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex max-w-xl flex-col items-center px-6 py-24 text-center">
 
         {/* Section label */}
-        <motion.div {...fadeUp(0)}>
+        <div {...fadeUp(0)} className="fade-up">
           <p className="section-label mb-8 justify-center text-white/60">
             Phoenix, Arizona
           </p>
-        </motion.div>
+        </div>
 
         {/* Headline */}
-        <motion.h1
+        <h1
           {...fadeUp(0.15)}
-          className="font-limelight text-6xl uppercase leading-[0.92] tracking-[0.02em] text-white sm:text-7xl md:text-8xl"
+          className="fade-up font-limelight text-6xl uppercase leading-[0.92] tracking-[0.02em] text-white sm:text-7xl md:text-8xl"
         >
           Arizona
           <br />
           Spurs
-        </motion.h1>
+        </h1>
 
         {/* Gold rule */}
-        <motion.div
+        <div
           {...fadeUp(0.25)}
           aria-hidden="true"
-          className="my-8 h-px w-24 bg-gold"
+          className="fade-up my-8 h-px w-24 bg-gold"
         />
 
         {/* Subheadline */}
-        <motion.p
+        <p
           {...fadeUp(0.35)}
-          className="max-w-sm font-josefin text-lg font-400 leading-relaxed tracking-wide text-white"
+          className="fade-up max-w-sm font-josefin text-lg font-400 leading-relaxed tracking-wide text-white"
         >
           Phoenix&apos;s officially recognized Tottenham Hotspur supporters club.
           <br />
           Watching together since 2014.
-        </motion.p>
+        </p>
 
         {/* CTAs */}
-        <motion.div
+        <div
           {...fadeUp(0.5)}
-          className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+          className="fade-up mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
           <Link href="/join" className="hero-cta-primary">
             Join the Club
@@ -126,21 +120,14 @@ export default function Hero() {
           <Link href="/events" className="hero-cta-secondary">
             See Events
           </Link>
-        </motion.div>
+        </div>
 
         {/* Scroll indicator */}
-        <motion.div
+        <div
           aria-hidden="true"
-          initial={prefersReducedMotion ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2"
+          className="fade-in absolute bottom-12 left-1/2 -translate-x-1/2"
         >
-          <motion.div
-            animate={prefersReducedMotion ? {} : { y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-2"
-          >
+          <div className="scroll-bob flex flex-col items-center gap-2">
             <span className="font-josefin text-xs uppercase tracking-[0.2em] text-white">
               Scroll
             </span>
@@ -159,8 +146,8 @@ export default function Hero() {
                 strokeLinejoin="round"
               />
             </svg>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );

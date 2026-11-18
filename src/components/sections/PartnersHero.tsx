@@ -1,46 +1,38 @@
-"use client";
-
-import { useReducedMotion, motion } from "framer-motion";
+// Entrance fade is CSS (.fade-up in globals.css) so the heading is in the first
+// paint; it animates only on md+ screens with no reduced-motion preference.
+const fadeUp = (delay: number) => ({ style: { animationDelay: `${delay}s` } });
 
 export default function PartnersHero() {
-  const prefersReducedMotion = useReducedMotion();
-
-  const fadeUp = (delay: number) => ({
-    initial: prefersReducedMotion ? false : { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.55, ease: "easeOut" as const, delay },
-  });
-
   return (
     <section
       aria-labelledby="partners-hero-heading"
       className="bg-spurs-navy px-6 pb-24 pt-14 text-center sm:pt-24"
     >
       <div className="mx-auto max-w-[700px]">
-        <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-white/60">
+        <p {...fadeUp(0)} className="fade-up fade-up-sm section-label mb-6 justify-center text-white/60">
           Our Partners
-        </motion.p>
+        </p>
 
-        <motion.h1
+        <h1
           id="partners-hero-heading"
           {...fadeUp(0.1)}
-          className="font-limelight text-4xl uppercase tracking-wide text-white md:text-5xl"
+          className="fade-up fade-up-sm font-limelight text-4xl uppercase tracking-wide text-white md:text-5xl"
         >
           Proud to Stand With
-        </motion.h1>
+        </h1>
 
-        <motion.div
+        <div
           {...fadeUp(0.2)}
           aria-hidden="true"
-          className="mx-auto my-8 h-px w-24 bg-gold"
+          className="fade-up fade-up-sm mx-auto my-8 h-px w-24 bg-gold"
         />
 
-        <motion.p
+        <p
           {...fadeUp(0.3)}
-          className="font-josefin text-base leading-relaxed tracking-wide text-white/70"
+          className="fade-up fade-up-sm font-josefin text-base leading-relaxed tracking-wide text-white/70"
         >
           The venue that hosts us and the club that unites us.
-        </motion.p>
+        </p>
       </div>
     </section>
   );

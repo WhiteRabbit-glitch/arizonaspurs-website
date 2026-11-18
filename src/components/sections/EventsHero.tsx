@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useReducedMotion, motion } from "framer-motion";
 import { Calendar, MapPin } from "lucide-react";
 import type { Match } from "@/lib/match";
 
@@ -14,15 +11,11 @@ function formatMatchDate(isoString: string) {
   };
 }
 
+// Entrance fade is CSS (.fade-up in globals.css) so the heading is in the first
+// paint; it animates only on md+ screens with no reduced-motion preference.
+const fadeUp = (delay: number) => ({ style: { animationDelay: `${delay}s` } });
+
 export default function EventsHero({ match }: { match: Match }) {
-  const prefersReducedMotion = useReducedMotion();
-
-  const fadeUp = (delay: number) => ({
-    initial: prefersReducedMotion ? false : { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.55, ease: "easeOut" as const, delay },
-  });
-
   const { day, date, time } = formatMatchDate(match.date);
 
   return (
@@ -33,36 +26,36 @@ export default function EventsHero({ match }: { match: Match }) {
       <div className="mx-auto max-w-[1200px] flex flex-col items-center">
 
         {/* Page label */}
-        <motion.p {...fadeUp(0)} className="section-label mb-6 justify-center text-white/50">
+        <p {...fadeUp(0)} className="fade-up fade-up-sm section-label mb-6 justify-center text-white/50">
           Fibbers Irish Pub · Chandler, AZ
-        </motion.p>
+        </p>
 
         {/* Page heading */}
-        <motion.h1
+        <h1
           id="events-heading"
           {...fadeUp(0.1)}
-          className="font-limelight text-5xl uppercase leading-tight tracking-wide text-white md:text-6xl"
+          className="fade-up fade-up-sm font-limelight text-5xl uppercase leading-tight tracking-wide text-white md:text-6xl"
         >
           Watch Parties
-        </motion.h1>
+        </h1>
 
-        <motion.p
+        <p
           {...fadeUp(0.2)}
-          className="mt-6 mb-10 max-w-xl font-josefin text-lg leading-relaxed tracking-wide text-white/80 [text-wrap:balance]"
+          className="fade-up fade-up-sm mt-6 mb-10 max-w-xl font-josefin text-lg leading-relaxed tracking-wide text-white/80 [text-wrap:balance]"
         >
           Every Spurs match is better with the family around you.
           Pull up a chair — we&apos;ve saved you a spot.
-        </motion.p>
+        </p>
 
         {/* Next match */}
-        <motion.p {...fadeUp(0.25)} className="section-label mb-8 justify-center text-white/60">
+        <p {...fadeUp(0.25)} className="fade-up fade-up-sm section-label mb-8 justify-center text-white/60">
           Next Match
-        </motion.p>
+        </p>
 
         {/* Fixture */}
-        <motion.div
+        <div
           {...fadeUp(0.3)}
-          className="flex flex-col items-center gap-4 md:flex-row md:gap-10"
+          className="fade-up fade-up-sm flex flex-col items-center gap-4 md:flex-row md:gap-10"
         >
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
             Tottenham Hotspur
@@ -73,17 +66,17 @@ export default function EventsHero({ match }: { match: Match }) {
           <span className="font-limelight text-3xl uppercase tracking-wide text-white md:text-4xl">
             {match.opponent}
           </span>
-        </motion.div>
+        </div>
 
         {/* Competition badge */}
-        <motion.div {...fadeUp(0.35)} className="mt-5">
+        <div {...fadeUp(0.35)} className="fade-up fade-up-sm mt-5">
           <span className="border border-gold/40 px-4 py-1 font-josefin text-xs uppercase tracking-[0.2em] text-gold">
             {match.competition}
           </span>
-        </motion.div>
+        </div>
 
         {/* Date / time / venue */}
-        <motion.div {...fadeUp(0.4)} className="mt-8 flex flex-col items-center gap-2">
+        <div {...fadeUp(0.4)} className="fade-up fade-up-sm mt-8 flex flex-col items-center gap-2">
           <p className="font-josefin text-sm font-600 uppercase tracking-[0.15em] text-white/60">
             {day}
           </p>
@@ -103,12 +96,12 @@ export default function EventsHero({ match }: { match: Match }) {
             <MapPin size={14} aria-hidden="true" />
             {match.venueLabel}
           </a>
-        </motion.div>
+        </div>
 
         {/* CTAs */}
-        <motion.div
+        <div
           {...fadeUp(0.5)}
-          className="mt-10 flex flex-wrap justify-center gap-4"
+          className="fade-up fade-up-sm mt-10 flex flex-wrap justify-center gap-4"
         >
           <a href={match.venueUrl} target="_blank" rel="noopener noreferrer" className="hero-cta-primary">
             Get Directions
@@ -116,7 +109,7 @@ export default function EventsHero({ match }: { match: Match }) {
           <Link href="#calendar" className="hero-cta-secondary">
             Full Schedule
           </Link>
-        </motion.div>
+        </div>
 
       </div>
 
