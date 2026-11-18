@@ -18,11 +18,11 @@ const josefinSans = Josefin_Sans({
 });
 
 const shareImage = {
-  url: "/images/share-card.png",
+  url: "/images/cheering-supporter.png",
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "Arizona Spurs club mark and wordmark on navy, with Phoenix, Arizona above.",
+  alt: "Arizona Spurs, Phoenix, Arizona, beside an illustration of a cheering supporter raising a fist.",
 };
 
 export const metadata: Metadata = {
