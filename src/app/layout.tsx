@@ -17,6 +17,14 @@ const josefinSans = Josefin_Sans({
   subsets: ["latin"],
 });
 
+const shareImage = {
+  url: "/images/cheering-supporter.png",
+  width: 1200,
+  height: 630,
+  type: "image/png",
+  alt: "Arizona Spurs, Phoenix, Arizona, beside an illustration of a cheering supporter raising a fist.",
+};
+
 export const metadata: Metadata = {
   title: "Arizona Spurs | Tottenham Hotspur Supporters Club — Phoenix",
   description:
@@ -26,6 +34,11 @@ export const metadata: Metadata = {
     siteName: "Arizona Spurs",
     locale: "en_US",
     type: "website",
+    images: [shareImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [shareImage],
   },
   icons: {
     icon: [
