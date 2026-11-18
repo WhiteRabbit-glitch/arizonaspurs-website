@@ -667,7 +667,7 @@
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(var(--fade-y, 24px));
   }
 }
 
@@ -691,7 +691,13 @@
 
 @media (min-width: 48rem) and (prefers-reduced-motion: no-preference) {
   .fade-up {
-    animation: fade-up 0.6s ease-out both;
+    animation: fade-up var(--fade-dur, 0.6s) ease-out both;
+  }
+
+  /* Interior page heroes: slightly shorter travel and duration than Home */
+  .fade-up-sm {
+    --fade-y: 20px;
+    --fade-dur: 0.55s;
   }
 
   .fade-in {
